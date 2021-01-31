@@ -1,24 +1,45 @@
 {
   "name": "thesystem.at",
-  "version": "0.0.1",
-  "description": "TheSystem - Artificial Museum",
+  "version": "0.23.5",
   "private": true,
-  "scripts": {
-    "start": "npm run dev",
-    "dev": "grundstein-server --dir ./docs --port 8000 --cors '*'"
+  "author": "Wizards & Witches",
+  "description": "the system.",
+  "license": "AGPL-3.0",
+  "homepage": "https://thesystem.at",
+  "engines": {
+    "node": ">=14.2.0"
   },
+  "scripts": {
+    "start": "magic dev",
+    "format": "f -w --exclude docs",
+    "test": "t --exclude docs",
+    "build": "NODE_ENV=production magic build",
+    "devbuild": "magic build",
+    "prod": "NODE_ENV=production magic build serve",
+    "dev": "magic dev",
+    "publish": "magic publish",
+    "connect": "magic connect"
+  },
+  "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thesystemcollective/thesystem.at.git"
   },
-  "author": "TheSystemCollective",
-  "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/thesystemcollective/thesystem.at/issues"
   },
-  "homepage": "https://thesystem.at",
+  "dependencies": {
+    "@magic-modules/no-spy": "0.0.6",
+    "@magic-modules/video-embed": "0.0.5",
+    "@magic/core": "0.0.103",
+    "@thesystemcollective/magic-theme": "github:thesystemcollective/magic-theme"
+  },
   "devDependencies": {
-    "@grundstein/gss": "github:grundstein/gss"
+    "@magic/format": "0.0.21",
+    "@magic/test": "0.1.60"
   },
   "contributors": [
     {

@@ -82,4 +82,6 @@ export const View = state => [
       p(['Development: ', Link({ text: 'Jascha Ehrenreich', to: 'https://jaeh.at' })]),
     ]),
   ]),
+
+  Partners(),
 ]

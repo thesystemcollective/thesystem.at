@@ -19,7 +19,7 @@ export const View = () => [
       ' - Manifestation in physical space',
     ]),
 
-    Img('/auslage.jpg'),
+    Picture({ src: '/auslage', type: 'jpg', width: 1200, height: 709 }),
 
     p(
       'In August and September of 2020, Phase.1 of "TheSystem" manifested itself on the Yppenplatz in Vienna, Austria.',

@@ -58,6 +58,7 @@ export const style = vars => ({
     height: 'auto',
     margin: '0 2em 0 0',
     maxWidth: '90vw',
+    maxHeight: '62px',
   },
 
   '.koer': {

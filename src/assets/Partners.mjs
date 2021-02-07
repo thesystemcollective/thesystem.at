@@ -1,4 +1,4 @@
-export const View = () =>
+export const View = (_, children) =>
   div({ class: 'Partners' }, [
     h3('Commissioned by:'),
 
@@ -25,7 +25,7 @@ export const View = () =>
       { to: 'https://usus.wien' },
       Img({
         title: 'yppshop provided by usus.wien',
-        src: 'https://thesystem.at/social/usus.png',
+        src: 'https://static.artificialmuseum.com/support/usus.svg',
         width: '80',
         height: '35',
       }),
@@ -35,17 +35,19 @@ export const View = () =>
       { to: 'https://magic.github.io' },
       Img({
         title: 'made with a few bits of magic',
-        src: 'https://thesystem.at/social/magic.png',
+        src: 'https://static.artificialmuseum.com/support/magic.svg',
         width: '40',
         height: '35',
       }),
     ),
+
+    children,
   ])
 
 export const style = vars => ({
   padding: 0,
   position: 'relative',
-  margin: '4em 0 0 2vw',
+  margin: '4em 0 0',
   width: 'auto',
 
   a: {

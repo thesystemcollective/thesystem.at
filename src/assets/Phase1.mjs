@@ -9,7 +9,7 @@ export const View = () =>
         p('11.08. - 14.10.2020'),
       ]),
 
-      Img({ src: '/auslage.jpg', height: '709', width: '1200' }),
+      Picture({ src: '/auslage', type: 'jpg', height: '709', width: '1200' }),
     ]),
   )
 

@@ -1,4 +1,4 @@
-export const View = text => div({ class: 'PageHeader' }, [h1(['THE', br(), 'SYSTEM']), h2(text)])
+export const View = text => div({ class: 'PageHeader' }, [h1('TheSystem'), h2(text)])
 
 export const style = vars => ({
   fontWeight: 500,

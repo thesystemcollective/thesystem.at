@@ -3,7 +3,7 @@ export default {
   WEB_ROOT: '/thesystem.at/',
   URL: 'thesystem.at',
   PUBLIC: 'docs',
-  THEME: '@thesystemcollective/magic-theme',
+  THEME: 'thesystemcollective',
   // CNAME: 'thesystem.at',
   IGNORED_STATIC: 'xcf',
 

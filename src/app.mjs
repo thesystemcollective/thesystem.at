@@ -1,9 +1,11 @@
 export const state = {
-  title: 'THESYSTEM',
-  description: 'THESYSTEM - August – Oktober 2020 - Yppenplatz 5, 1160 Wien',
+  title: 'TheSystemCollective',
+  description: 'A syndicate of independent artists, makers, programmers, engineers, philosophers, activists, and scientists, collectively using art and technology to transform our world.',
   image: 'https://thesystem.at/thesystem_preview_image.jpg',
 
   pageClass: 'light',
+  
+  logotext: 'Collective',
 
   menu: [
     { to: '/', text: 'about' },

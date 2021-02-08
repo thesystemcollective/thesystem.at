@@ -24,84 +24,84 @@ export const state = {
   ],
 
   artists: [
-    "Marco Otoya",
+    'Marco Otoya',
     {
-      text: "Adam Lebesmühlbacher",
-      to: "http://www.mysoundofmusic.at"
+      text: 'Adam Lebesmühlbacher',
+      to: 'http://www.mysoundofmusic.at',
     },
     {
-      text: "Chora Malik",
-      to: "https://setzkastenwien.at/"
+      text: 'Chora Malik',
+      to: 'https://setzkastenwien.at/',
     },
     {
-      text: "Litto / Daniela Weiss",
-      to: "https://litto.work"
+      text: 'Litto / Daniela Weiss',
+      to: 'https://litto.work',
     },
     {
-      text: "Dagmar Rohm",
-      to: "http://dagmarrohm.at/"
+      text: 'Dagmar Rohm',
+      to: 'http://dagmarrohm.at/',
     },
     {
-      text: "David Wuchte",
-      to: "https://wuchte.at"
+      text: 'David Wuchte',
+      to: 'https://wuchte.at',
     },
     {
-      text: "Elet.Irrlicht",
-      to: "https://elet.cc/"
+      text: 'Elet.Irrlicht',
+      to: 'https://elet.cc/',
     },
     {
-      text: "Guillermo Tellechea",
-      to: "https://setzkastenwien.at/"
+      text: 'Guillermo Tellechea',
+      to: 'https://setzkastenwien.at/',
     },
     {
-      text: "Heinz Seidenbusch",
-      to: "https://heinzseidenbusch.com/"
+      text: 'Heinz Seidenbusch',
+      to: 'https://heinzseidenbusch.com/',
     },
     {
-      text: "Jascha Ehrenreich",
-      to: "https://jaeh.at"
+      text: 'Jascha Ehrenreich',
+      to: 'https://jaeh.at',
     },
     {
-      text: "Jay Vaughan",
-      to: "https://soundcloud.com/ibisum/tracks"
+      text: 'Jay Vaughan',
+      to: 'https://soundcloud.com/ibisum/tracks',
     },
-    "Markus Liszt",
+    'Markus Liszt',
     {
-      text: "Meks",
-      to: "https://soundcloud.com/user-945933947"
-    },
-    {
-      text: "Miss Bubblebliss",
-      to: "http://missbubblebliss.at/"
+      text: 'Meks',
+      to: 'https://soundcloud.com/user-945933947',
     },
     {
-      text: "Noémi Kiss",
-      to: "http://noemikiss.at/"
+      text: 'Miss Bubblebliss',
+      to: 'http://missbubblebliss.at/',
     },
     {
-      text: "Oktogon / Sebastian Konzett",
-      to: "https://www.instagram.com/saveokto/"
+      text: 'Noémi Kiss',
+      to: 'http://noemikiss.at/',
     },
     {
-      text: "Reinhold Zisser",
-      to: "http://reinholdzisser.com/"
+      text: 'Oktogon / Sebastian Konzett',
+      to: 'https://www.instagram.com/saveokto/',
     },
     {
-      text: "Selina Nowak",
-      to: "http://www.mysoundofmusic.at"
+      text: 'Reinhold Zisser',
+      to: 'http://reinholdzisser.com/',
     },
     {
-      text: "Stefan Stürzer",
-      to: "https://absturz.info/"
+      text: 'Selina Nowak',
+      to: 'http://www.mysoundofmusic.at',
     },
     {
-      text: "Stefan Voglsinger",
-      to: "https://setzkastenwien.at/"
+      text: 'Stefan Stürzer',
+      to: 'https://absturz.info/',
     },
     {
-      text: "Zirkus Mops",
-      to: "http://www.mysoundofmusic.at"
-    }
+      text: 'Stefan Voglsinger',
+      to: 'https://setzkastenwien.at/',
+    },
+    {
+      text: 'Zirkus Mops',
+      to: 'http://www.mysoundofmusic.at',
+    },
   ],
 
   seo: {

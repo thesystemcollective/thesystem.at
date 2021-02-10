@@ -69,6 +69,12 @@ export default (v = {}) => {
       fontWeight: 500,
     },
 
+    img: {
+      maxWidth: '100%',
+      height: 'auto',
+      width: 'auto',
+    },
+
     '#Magic': {
       '.icon': {
         width: '1em',
@@ -88,9 +94,9 @@ export default (v = {}) => {
       maxWidth: 'inherit',
     },
 
-    '.PageHeader': {
-      display: 'inline-block',
-      width: '100%',
+    '.Menu': {
+      float: 'none',
+      textAlign: 'center',
     },
 
     '.month-title': {
@@ -157,11 +163,18 @@ export default (v = {}) => {
 
     '.content': {
       margin: '0 1em 3em',
+      padding: '2em 0 0',
 
       p: {
         lineHeight: 1.4,
         margin: '0.5em 0',
       },
+    },
+
+    '.LightSwitch': {
+      right: '0.5em',
+      left: 'auto',
+      bottom: '2em',
     },
 
     [`@media screen and (min-width: ${v.widths.tablet})`]: {
@@ -195,6 +208,7 @@ export default (v = {}) => {
       '.content': {
         width: '70vw',
         margin: '0 auto 6em',
+        padding: '6em 0 0',
       },
     },
 

@@ -1,11 +1,10 @@
 export const state = {
   title: 'TheSystemCollective',
-  description: 'A syndicate of independent artists, makers, programmers, engineers, philosophers, activists, and scientists, collectively using art and technology to transform our world.',
+  description:
+    'A syndicate of independent artists, makers, programmers, engineers, philosophers, activists, and scientists, collectively using art and technology to transform our world.',
   image: 'https://thesystem.at/thesystem_preview_image.jpg',
 
-  pageClass: 'light',
-  
-  logotext: 'Collective',
+  pageClass: 'dark',
 
   menu: [
     { to: '/', text: 'about' },

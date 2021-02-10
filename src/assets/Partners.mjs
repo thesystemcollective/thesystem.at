@@ -7,7 +7,7 @@ export const View = (_, children) =>
         Img({
           class: 'koer',
           alt: 'kör',
-          src: 'https://static.artificialmuseum.com/support/koer.svg',
+          src: 'https://static.artificialmuseum.com/support/koer-red.svg',
           width: '255',
           height: '100',
         }),

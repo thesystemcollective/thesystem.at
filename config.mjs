@@ -7,5 +7,5 @@ export default {
   // CNAME: 'thesystem.at',
   IGNORED_STATIC: 'xcf',
 
-  HOIST: ['NoSpy'],
+  HOIST: ['NoSpy', 'LightSwitch'],
 }

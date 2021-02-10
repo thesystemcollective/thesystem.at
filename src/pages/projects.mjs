@@ -1,6 +1,8 @@
-export const View = () => [
-  PageHeader('Projects'),
+export const state = {
+  logotext: 'Projects',
+}
 
+export const View = () => [
   div({ class: 'content' }, [
     h2('Artificial Museum'),
 

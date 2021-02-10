@@ -1,6 +1,8 @@
-export const View = state => [
-  PageHeader('Partners'),
+export const state = {
+  logotext: 'Partners',
+}
 
+export const View = state => [
   div({ class: 'content' }, [
     div('We are proud to work with the following institutions, collectives and artists.'),
 

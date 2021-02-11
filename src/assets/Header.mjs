@@ -29,14 +29,15 @@ export const style = v => ({
   },
 
   '.Menu': {
-    position: 'fixed',
-    margin: 0,
-    top: 0,
-    padding: '0.5em 0 0.2em',
-    bottom: 'auto',
-    width: '100%',
-    textAlign: 'center',
     backgroundColor: v.background.dark,
+    bottom: 'auto',
+    margin: 0,
+    padding: '0.5em 0 0.2em',
+    position: 'fixed',
+    textAlign: 'center',
+    top: 0,
+    width: '100vw',
+    zIndex: 2,
 
     '.light &&': {
       backgroundColor: v.background.light,

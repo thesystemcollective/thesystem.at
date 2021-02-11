@@ -53,6 +53,7 @@ export const style = vars => ({
   position: 'relative',
   margin: '4em 0 0',
   width: 'auto',
+  clear: 'both',
 
   a: {
     display: 'inline-block',
@@ -75,7 +76,8 @@ export const style = vars => ({
 
   '.koer': {
     display: 'block',
-    margin: '0 0 1em',
+    margin: '0 1em 1em 0',
+    float: 'left',
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {

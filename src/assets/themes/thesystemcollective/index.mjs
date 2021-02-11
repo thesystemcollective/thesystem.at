@@ -110,6 +110,43 @@ export default (v = {}) => {
       },
     },
 
+    '.Phase1': {
+      margin: '0 1em 3em',
+
+      '> div': {
+        display: 'inline-block',
+      },
+
+      h2: {
+        paddingTop: 0,
+      },
+
+      '.address': {
+        margin: '0 0 1em',
+      },
+
+      img: {
+        maxWidth: '100%',
+        maxHeight: '100%',
+        width: '100%',
+        height: 'auto',
+      },
+
+      [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+        width: '70vw',
+        margin: '0 auto 3em',
+
+        '.address': {
+          float: 'left',
+          width: '34vw',
+        },
+        img: {
+          float: 'right',
+          width: '35vw',
+        },
+      },
+    },
+
     '.month-title': {
       margin: '2em 5vw',
       fontWeight: '700',

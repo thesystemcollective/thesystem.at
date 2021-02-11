@@ -3,24 +3,24 @@ export const View = () =>
     title: 'Systeme & Menschen',
     id: 'systeme-und-menschen',
     img: {
-      src: '/thesystem-stizz-systemeundmenschen.jpg',
+      src: '/exhibitions/systemeundmenschen/thesystem-stefansturzer-systemeundmenschen-preview.jpg',
       height: 1200,
       width: 900,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/systemeundmenschen/thesystem-stizz-systemeundmenschen-01.jpg',
+        src: '/exhibitions/systemeundmenschen/thesystem-stefansturzer-systemeundmenschen-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/systemeundmenschen/thesystem-stizz-systemeundmenschen-02.jpg',
+        src: '/exhibitions/systemeundmenschen/thesystem-stefansturzer-systemeundmenschen-02.jpg',
         height: 675,
         width: 1200,
       },
       {
-        src: '/exhibitions/systemeundmenschen/thesystem-stizz-systemeundmenschen-03.jpg',
+        src: '/exhibitions/systemeundmenschen/thesystem-stefansturzer-systemeundmenschen-03.jpg',
         height: 900,
         width: 1200,
       },

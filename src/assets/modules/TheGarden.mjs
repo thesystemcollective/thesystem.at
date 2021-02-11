@@ -3,7 +3,7 @@ export const View = () =>
     title: 'TheSystem: garden',
     id: 'thegarden',
     img: {
-      src: '/thesystem-thegarden.jpg',
+      src: '/exhibitions/thegarden/thesystem-thegarden-preview.jpg',
       height: 676,
       width: 1200,
     },

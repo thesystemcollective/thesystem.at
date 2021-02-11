@@ -3,9 +3,9 @@ export const View = () =>
     title: 'Max Mustermann',
     id: 'maxmustermann',
     img: {
-      src: '/thesystem-noemikiss-maxmustermann.jpg',
-      height: 1200,
-      width: 842,
+      src: '/exhibitions/maxmustermann/thesystem-noemikiss-maxmustermann-preview.jpg',
+      height: 842,
+      width: 1200,
     },
     presents: {
       artists: {

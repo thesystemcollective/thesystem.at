@@ -3,7 +3,7 @@ export const View = () =>
     title: 'The Wound',
     id: 'thewound',
     img: {
-      src: '/thesystem-selinanovak-thewound.jpg',
+      src: '/exhibitions/thewound/thesystem-selinanovak-thewound-preview.jpg',
       height: 1200,
       width: 1600,
     },

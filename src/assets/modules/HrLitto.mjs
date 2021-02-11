@@ -3,7 +3,7 @@ export const View = () =>
     title: 'Fake Mirror',
     id: 'fake-mirror',
     img: {
-      src: '/thesystem-litto-thebody.jpg',
+      src: '/exhibitions/hrlitto/thesystem-mslitto-hrlitto-preview.jpg',
       height: 900,
       width: 1200,
     },

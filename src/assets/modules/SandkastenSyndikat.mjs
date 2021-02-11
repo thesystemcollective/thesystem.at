@@ -3,7 +3,7 @@ export const View = () =>
     title: 'System, Struktur & DeFragmentierung',
     id: 'system-struktur-defragmentierung',
     img: {
-      src: '/thesystem-sandkasten-syndikat.jpg',
+      src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-preview.jpg',
       height: 1380,
       width: 1080,
     },

@@ -3,7 +3,7 @@ export const View = () =>
     title: ['fluesterkonus', br(), 'inter.aktion'],
     id: 'fluesterkonus',
     img: {
-      src: '/thesystem-mariakoller-fluesterkonus.jpg',
+      src: '/exhibitions/fluesterkonus/thesystem-choramalik-fluesterkonus-preview.jpg',
       height: 1200,
       width: 800,
     },

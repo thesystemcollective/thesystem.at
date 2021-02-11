@@ -3,7 +3,7 @@ export const View = () =>
     title: '"Work"',
     id: 'work',
     img: {
-      src: '/thesystem-zirkusmops-work.jpg',
+      src: '/exhibitions/work/thesystem-zirkusmops-work-preview.jpg',
       height: 1200,
       width: 1028,
     },

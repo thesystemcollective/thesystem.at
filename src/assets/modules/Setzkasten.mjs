@@ -3,9 +3,9 @@ export const View = () =>
     title: 'SETZKASTEN X TheSystem',
     id: 'setzkasten',
     img: {
-      src: '/thesystem_setzkastenwien.jpg',
-      height: 1000,
-      width: 667,
+      src: '/exhibitions/setzkasten/thesystem-setzkasten-preview.jpg',
+      height: 667,
+      width: 1000,
     },
 
     exhibitionImages: [

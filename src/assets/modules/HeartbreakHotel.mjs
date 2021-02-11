@@ -3,7 +3,7 @@ export const View = () =>
     title: 'HeartBreakHotel',
     id: 'heartbreakhotel',
     img: {
-      src: '/thesystem-dagmarrohm-heartbreakhotel.jpg',
+      src: '/exhibitions/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-preview.jpg',
       height: 1020,
       width: 1013,
     },

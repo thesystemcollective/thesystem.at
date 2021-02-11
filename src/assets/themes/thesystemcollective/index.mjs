@@ -18,8 +18,8 @@ export const vars = {
     light: '#0f0f0f',
 
     hover: {
-      dark: '#f0f0f0',
-      light: '#0f0f0f',
+      dark: '#fff',
+      light: '#000',
     },
   },
 
@@ -46,7 +46,7 @@ export default (v = {}) => {
       fontSize: '22px',
       fontFamily: 'notosans, sans-serif',
       overflowX: 'initial',
-      lineHeight: 1.4,
+      lineHeight: 1.2,
     },
 
     a: {

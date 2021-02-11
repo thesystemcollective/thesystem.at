@@ -6,6 +6,8 @@ export const View = (props = {}) => {
   const fill = theme === 'dark' ? '#fafafa' : '#0c0c0c'
 
   return header({ class: 'Header' }, [
+    menu && Menu({ url, hash, root, menu }),
+
     Link({ class: 'Branding', to: root }, [
       svg({ viewBox: '0 0 54 60' }, [
         path({ d: 'M36 0v10h9v40h-9v10h18V0zM0 0v60h18V50H9V10h9V0z', fill }),
@@ -13,14 +15,29 @@ export const View = (props = {}) => {
       h1('TheSystem'),
       h2(logotext),
     ]),
-    menu && Menu({ url, hash, root, menu }),
   ])
 }
 
 export const style = vars => ({
   width: '100%',
-  margin: '0 0 2em',
+  margin: '3em 0 2em',
   zIndex: 1,
+  position: 'relative',
+
+  '.Menu': {
+    position: 'fixed',
+    margin: 0,
+    top: 0,
+    padding: '0.5em 0 0.2em',
+    bottom: 'auto',
+    width: '100%',
+    textAlign: 'center',
+    backgroundColor: vars.background.dark,
+
+    '.light &&': {
+      backgroundColor: vars.background.light,
+    }
+  },
 
   a: {
     textDecoration: 'none',
@@ -48,6 +65,8 @@ export const style = vars => ({
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
     position: 'fixed',
     backgroundColor: vars.background.dark,
+    margin: 0,
+    top: 0,
 
     '.light &&': {
       backgroundColor: vars.background.light,
@@ -58,8 +77,10 @@ export const style = vars => ({
     },
     '.Menu': {
       float: 'right',
-      width: 'auto',
+      margin: '0.5em 0 0',
+      position: 'relative',
       textAlign: 'right',
+      width: 'auto',
     },
   },
 })

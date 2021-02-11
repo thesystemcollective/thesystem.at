@@ -1,4 +1,15 @@
-export const View = children => div({ class: 'Content' }, children)
+export const View = (props, children) => {
+  if (!children) {
+    children = props
+    props = {
+      class: 'Content'
+    }
+  }
+
+  props.class = props.class && !props.class.includes('Content') ? `Content ${props.class}` : 'Content'
+
+  return div(props, children)
+}
 
 export const style = v => ({
   clear: 'both',

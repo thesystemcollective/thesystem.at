@@ -43,7 +43,7 @@ export default (v = {}) => {
     },
 
     body: {
-      fontSize: '18px',
+      fontSize: '22px',
       fontFamily: 'notosans, sans-serif',
       overflowX: 'initial',
       lineHeight: 1.4,
@@ -161,16 +161,6 @@ export default (v = {}) => {
       },
     },
 
-    '.content': {
-      margin: '0 1em 3em',
-      padding: '2em 0 0',
-
-      p: {
-        lineHeight: 1.4,
-        margin: '0.5em 0',
-      },
-    },
-
     '.LightSwitch': {
       right: '0.5em',
       left: 'auto',
@@ -203,12 +193,6 @@ export default (v = {}) => {
         section: {
           clear: 'none',
         },
-      },
-
-      '.content': {
-        width: '70vw',
-        margin: '0 auto 6em',
-        padding: '6em 0 0',
       },
     },
 

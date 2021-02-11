@@ -29,6 +29,8 @@ export const vars = {
     desktop: '940px',
     agency: '1200px',
   },
+
+  maxPageWidth: '1400px',
 }
 
 export default (v = {}) => {
@@ -76,10 +78,6 @@ export default (v = {}) => {
     },
 
     '#Magic': {
-      '.icon': {
-        width: '1em',
-      },
-
       backgroundColor: v.background.dark,
       color: v.text.dark,
 
@@ -87,6 +85,15 @@ export default (v = {}) => {
         backgroundColor: v.background.light,
         color: v.text.light,
       },
+
+      '.icon': {
+        width: '1em',
+      },
+    },
+
+    '.Page': {
+      maxWidth: v.maxPageWidth,
+      margin: '0 auto',
     },
 
     '.Wrapper': {
@@ -97,6 +104,10 @@ export default (v = {}) => {
     '.Menu': {
       float: 'none',
       textAlign: 'center',
+
+      li: {
+        margin: '0 0 0 0.5em',
+      },
     },
 
     '.month-title': {

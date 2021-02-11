@@ -5,7 +5,7 @@ export const View = state =>
         path({ d: 'M36 0v10h9v40h-9v10h18V0zM0 0v60h18V50H9V10h9V0z', fill: '#ffffff' }),
       ]),
 
-      div([
+      div({ class: 'Impressum' }, [
         h2('Impressum'),
 
         h3('Address:'),
@@ -13,34 +13,36 @@ export const View = state =>
         p('Yppenplatz 5'),
         p('1170 Wien'),
         p('Austria'),
+
+        h3('Represented by:'),
+        p('Litto / Daniela Weiss'),
+
+        h3('Email:'),
+        Link({
+          to: 'mailto:thesystemcollective@gmail.com',
+          text: 'thesystemcollective@gmail.com',
+        }),
       ]),
 
-      h3('Represented by:'),
-      p('Litto / Daniela Weiss'),
+      div({ class: 'Privacy' }, [
+        h2('Privacy notice'),
 
-      h3('Email:'),
-      Link({
-        to: 'mailto:thesystemcollective@gmail.com',
-        text: 'thesystemcollective@gmail.com',
-      }),
+        h3('No spying'),
+        p('We promise to never analyze, track, or sell any data about you.'),
+        p('We will also never save any data without asking explicitly.'),
 
-      h2('Privacy notice'),
+        h3('Local data'),
+        p([
+          'All browser features that collect sensitive data',
+          ' (device orientation, 3d-map of your surroundings, camera video streams, geolocation)',
+          ' DO NOT and NEVER WILL transmit this data to our servers.',
+        ]),
 
-      h3('No spying'),
-      p('We promise to never analyze, track, or sell any data about you.'),
-      p('We will also never save any data without asking explicitly.'),
-
-      h3('Local data'),
-      p([
-        'All browser features that collect sensitive data',
-        ' (device orientation, 3d-map of your surroundings, camera video streams, geolocation)',
-        ' DO NOT and NEVER WILL transmit this data to our servers.',
-      ]),
-
-      h3('Session storage'),
-      p([
-        'We save some data in your browser (your last gps location).',
-        'This information gets deleted as soon as you close the browser tab.',
+        h3('Session storage'),
+        p([
+          'We save some data in your browser (your last gps location).',
+          'This information gets deleted as soon as you close the browser tab.',
+        ]),
       ]),
 
       div({ class: 'Social' }, [
@@ -95,9 +97,18 @@ export const style = v => ({
   clear: 'both',
   color: v.text.dark,
   margin: '2em 0 0',
-  padding: `5em 0 .5em ${v.paddingLeft}`,
+  padding: `5em ${v.paddingLeft} .5em`,
   position: 'relative',
   fontSize: '0.8em',
+
+  h2: {
+    padding: 0,
+    lineHeight: 1,
+  },
+
+  '.Privacy': {
+    margin: '3em 0 0',
+  },
 
   '#Magic &&': {
     a: {

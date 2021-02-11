@@ -122,6 +122,8 @@ export const style = v => ({
 
   '.Container': {
     textAlign: 'left',
+    maxWidth: v.maxPageWidth,
+    margin: '0 auto',
   },
 
   '.Credits': {
@@ -131,8 +133,6 @@ export const style = v => ({
   'svg.logo': {
     float: 'right',
     height: '60px',
-    position: 'absolute',
-    right: '48px',
     width: '60px',
   },
 

@@ -5,7 +5,7 @@ export const View = (props = {}) => {
 
   const fill = theme === 'dark' ? '#fafafa' : '#0c0c0c'
 
-  return header({ class: 'Header' }, [
+  return header({ class: 'Header' }, div({ class: 'Container' }, [
     menu && Menu({ url, hash, root, menu }),
 
     Link({ class: 'Branding', to: root }, [
@@ -15,14 +15,18 @@ export const View = (props = {}) => {
       h1('TheSystem'),
       h2(logotext),
     ]),
-  ])
+  ]))
 }
 
 export const style = vars => ({
   width: '100%',
   margin: '3em 0 2em',
   zIndex: 1,
-  maxWidth: '1400px',
+
+  '.Container': {
+    maxWidth: vars.maxPageWidth,
+    margin: '0 auto',
+  },
 
   '.Menu': {
     position: 'fixed',

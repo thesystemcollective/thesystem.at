@@ -3,7 +3,7 @@ export const View = children => div({ class: 'Content' }, children)
 export const style = v => ({
   clear: 'both',
   margin: '0 1em 3em',
-  padding: '4em 0 0 1em',
+  padding: '2em 0.5em 2em 1em',
   margin: '0 auto',
 
   p: {

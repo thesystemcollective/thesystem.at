@@ -8,8 +8,8 @@ export const state = {
 
   menu: [
     { to: '/', text: 'about' },
-    { to: '/projects/', text: 'projects' },
-    { to: '/partners/', text: 'partners' },
+    { to: '/nowalls/', text: 'no walls' },
+    // { to: '/#partners', text: 'partners' },
     // { to: '/contact/', text: 'contact' },
   ],
 

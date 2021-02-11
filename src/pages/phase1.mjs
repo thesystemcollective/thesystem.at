@@ -5,7 +5,19 @@ export const state = {
 export const View = state => [
   PageHeader('2020'),
 
-  Phase1(),
+  div(
+    { class: 'Phase1' },
+    div([
+      div({ class: 'address' }, [
+        h2('Phase.1: Source'),
+        p('Yppenplatz 5'),
+        p('1160 Wien'),
+        p('11.08. - 14.10.2020'),
+      ]),
+
+      Picture({ src: '/auslage', type: 'jpg', height: '709', width: '1200' }),
+    ]),
+  ),
 
   div({ class: 'Physical' }, [
     h2('Manifestation in physical space'),

@@ -97,7 +97,7 @@ export const style = v => ({
   margin: '2em 0 0',
   padding: `5em 0 .5em ${v.paddingLeft}`,
   position: 'relative',
-  fontSize: '0.9em',
+  fontSize: '0.8em',
 
   '#Magic &&': {
     a: {
@@ -119,10 +119,10 @@ export const style = v => ({
 
   'svg.logo': {
     float: 'right',
-    height: '100px',
+    height: '60px',
     position: 'absolute',
     right: '48px',
-    width: '100px',
+    width: '60px',
   },
 
   '.Social': {

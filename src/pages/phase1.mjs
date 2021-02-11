@@ -1,3 +1,7 @@
+export const state = {
+  logotext: 'Phase.1'
+}
+
 export const View = state => [
   PageHeader('2020'),
 

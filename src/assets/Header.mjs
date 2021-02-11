@@ -22,7 +22,7 @@ export const style = vars => ({
   width: '100%',
   margin: '3em 0 2em',
   zIndex: 1,
-  position: 'relative',
+  maxWidth: '1400px',
 
   '.Menu': {
     position: 'fixed',

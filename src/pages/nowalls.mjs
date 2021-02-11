@@ -1,15 +1,17 @@
+export const state = {
+  logotext: 'NoWalls',
+}
+
 export const View = () => [
   Content([
-    Slogan('No Walls'),
-
     Text([
       p([
-        'The exhibition series "No Walls" aims',
-        ' to create a decentralized, localized exhibition all over Vienna and other cities.',
+        'The exhibition series "No Walls"',
+        ' creates decentralized, localized art experiences all over Vienna and beyond.',
       ]),
       p([
         'This includes multiple exhibitions, interventions and collaborations',
-        ' that will happen over the next year.',
+        ' which will happen throughout 2021.',
       ]),
       p([
         'We will put our focus on all areas of life in which our freedoms are restricted,',

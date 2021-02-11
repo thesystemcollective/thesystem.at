@@ -9,6 +9,7 @@ export const state = {
   menu: [
     { to: '/', text: 'about' },
     { to: '/nowalls/', text: 'no walls' },
+    { to: '/phase1/', text: 'phase.1' },
     // { to: '/#partners', text: 'partners' },
     // { to: '/contact/', text: 'contact' },
   ],

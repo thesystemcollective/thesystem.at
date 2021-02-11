@@ -18,13 +18,13 @@ export const View = (props = {}) => {
   ]))
 }
 
-export const style = vars => ({
+export const style = v => ({
   width: '100%',
   margin: '3em 0 2em',
   zIndex: 1,
 
   '.Container': {
-    maxWidth: vars.maxPageWidth,
+    maxWidth: v.maxPageWidth,
     margin: '0 auto',
   },
 
@@ -36,10 +36,10 @@ export const style = vars => ({
     bottom: 'auto',
     width: '100%',
     textAlign: 'center',
-    backgroundColor: vars.background.dark,
+    backgroundColor: v.background.dark,
 
     '.light &&': {
-      backgroundColor: vars.background.light,
+      backgroundColor: v.background.light,
     }
   },
 
@@ -66,14 +66,14 @@ export const style = vars => ({
     fontSize: '1.7em',
   },
 
-  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+  [`@media screen and (min-width: ${v.widths.laptop})`]: {
     position: 'fixed',
-    backgroundColor: vars.background.dark,
+    backgroundColor: v.background.dark,
     margin: 0,
     top: 0,
 
     '.light &&': {
-      backgroundColor: vars.background.light,
+      backgroundColor: v.background.light,
     },
 
     '.Branding': {

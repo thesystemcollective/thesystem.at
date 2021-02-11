@@ -36,11 +36,11 @@
     "@magic-modules/no-spy": "0.0.6",
     "@magic-modules/quote": "0.0.1",
     "@magic-modules/video-embed": "0.0.5",
-    "@magic/core": "0.0.105"
+    "@magic/core": "0.0.106"
   },
   "devDependencies": {
     "@magic/format": "0.0.21",
-    "@magic/test": "0.1.61"
+    "@magic/test": "0.1.62"
   },
   "contributors": [
     {

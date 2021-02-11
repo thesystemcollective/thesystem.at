@@ -26,7 +26,6 @@ export const state = {
   ],
 
   artists: [
-    'Marco Otoya',
     {
       text: 'Adam Lebesmühlbacher',
       to: 'http://www.mysoundofmusic.at',
@@ -67,6 +66,7 @@ export const state = {
       text: 'Jay Vaughan',
       to: 'https://soundcloud.com/ibisum/tracks',
     },
+    'Marco Otoya',
     'Markus Liszt',
     {
       text: 'Meks',

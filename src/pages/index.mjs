@@ -3,7 +3,7 @@ export const state = {
 }
 
 export const View = ({ artists, collectives }) => [
-  Picture({ src: '/img/hero', type: 'jpg', height: 707, width: 1000 }),
+  Picture({ src: '/img/hero', type: 'jpg', height: 900, width: 1200 }),
 
   Content([
     Slogan("We don't need space, time is irrelevant, objects stay as useful as the user."),

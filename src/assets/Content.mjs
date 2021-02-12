@@ -18,6 +18,7 @@ export const style = v => ({
   padding: '2em 0.5em 2em 1em',
   margin: '0 auto',
   maxWidth: '1200px',
+  width: '95%',
 
   p: {
     lineHeight: 1.4,

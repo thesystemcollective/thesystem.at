@@ -45,7 +45,7 @@ export default (v = {}) => {
     },
 
     body: {
-      fontSize: '22px',
+      fontSize: '20px',
       fontFamily: 'notosans, sans-serif',
       overflowX: 'initial',
       lineHeight: 1.2,
@@ -133,8 +133,9 @@ export default (v = {}) => {
       },
 
       [`@media screen and (min-width: ${vars.widths.laptop})`]: {
-        width: '70vw',
-        margin: '0 auto 3em',
+        body: {
+          fontSize: '22px',
+        },
 
         '.address': {
           float: 'left',

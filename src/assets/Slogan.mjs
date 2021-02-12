@@ -4,5 +4,5 @@ export const style = {
   fontSize: '2em',
   letterSpacing: '-4px',
   fontWeight: 500,
-  margin: '2em 0 0',
+  margin: '0 0 1em',
 }

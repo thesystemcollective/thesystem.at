@@ -4,7 +4,7 @@ export const state = {
 
 export const View = () => [
   Content([
-    Slogan('2021'),
+    Slogan('NoWalls: 2021'),
 
     Text([
       p([

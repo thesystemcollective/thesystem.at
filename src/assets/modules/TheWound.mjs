@@ -3,39 +3,39 @@ export const View = () =>
     title: 'The Wound',
     id: 'thewound',
     img: {
-      src: '/exhibitions/thewound/thesystem-selinanovak-thewound-preview.jpg',
+      src: '/exhibitions/thewound/thesystem-selinanowak-thewound-preview.jpg',
       height: 1200,
       width: 1600,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/thewound/thesystem-selinanovak-thewound-01.jpg',
+        src: '/exhibitions/thewound/thesystem-selinanowak-thewound-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/thewound/thesystem-selinanovak-thewound-02.jpg',
+        src: '/exhibitions/thewound/thesystem-selinanowak-thewound-02.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/thewound/thesystem-selinanovak-thewound-03.jpg',
+        src: '/exhibitions/thewound/thesystem-selinanowak-thewound-03.jpg',
         height: 800,
         width: 1200,
       },
       {
-        src: '/exhibitions/thewound/thesystem-selinanovak-thewound-04.jpg',
+        src: '/exhibitions/thewound/thesystem-selinanowak-thewound-04.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/thewound/thesystem-selinanovak-thewound-05.jpg',
+        src: '/exhibitions/thewound/thesystem-selinanowak-thewound-05.jpg',
         height: 800,
         width: 1200,
       },
       {
-        src: '/exhibitions/thewound/thesystem-selinanovak-thewound-06.jpg',
+        src: '/exhibitions/thewound/thesystem-selinanowak-thewound-06.jpg',
         height: 800,
         width: 1200,
       },

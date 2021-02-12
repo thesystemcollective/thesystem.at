@@ -92,8 +92,8 @@ export default (v = {}) => {
     },
 
     '.Page': {
-      maxWidth: v.maxPageWidth,
       margin: '0 auto',
+      maxWidth: v.maxPageWidth,
     },
 
     '.Wrapper': {
@@ -220,6 +220,10 @@ export default (v = {}) => {
         fontSize: '22px',
       },
 
+      '.Content.Physical': {
+        padding: '4em 0 8em 2em',
+      },
+
       '.sections': {
         section: {
           margin: '0 4vw 0 0',
@@ -241,6 +245,10 @@ export default (v = {}) => {
         section: {
           clear: 'none',
         },
+      },
+
+      '.Page': {
+        padding: '5em 0',
       },
     },
 

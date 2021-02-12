@@ -29,7 +29,6 @@ export const View = () =>
             to: 'https://soundcloud.com/ibisum/tracks',
           }),
         ),
-        p(span(' & ')),
         p(
           Link({
             text: 'meks',

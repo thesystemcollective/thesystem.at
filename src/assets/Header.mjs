@@ -5,17 +5,20 @@ export const View = (props = {}) => {
 
   const fill = theme === 'dark' ? '#fafafa' : '#0c0c0c'
 
-  return header({ class: 'Header' }, div({ class: 'Container' }, [
-    menu && Menu({ url, hash, root, menu }),
+  return header(
+    { class: 'Header' },
+    div({ class: 'Container' }, [
+      menu && Menu({ url, hash, root, menu }),
 
-    Link({ class: 'Branding', to: root }, [
-      svg({ viewBox: '0 0 54 60' }, [
-        path({ d: 'M36 0v10h9v40h-9v10h18V0zM0 0v60h18V50H9V10h9V0z', fill }),
+      Link({ class: 'Branding', to: root }, [
+        svg({ viewBox: '0 0 54 60' }, [
+          path({ d: 'M36 0v10h9v40h-9v10h18V0zM0 0v60h18V50H9V10h9V0z', fill }),
+        ]),
+        h1('TheSystem'),
+        h2(logotext),
       ]),
-      h1('TheSystem'),
-      h2(logotext),
     ]),
-  ]))
+  )
 }
 
 export const style = v => ({
@@ -32,7 +35,7 @@ export const style = v => ({
     backgroundColor: v.background.dark,
     bottom: 'auto',
     margin: 0,
-    padding: '0.5em 0 0.2em',
+    padding: '0.5em 0.25em 0.2em 0',
     position: 'fixed',
     textAlign: 'center',
     top: 0,
@@ -41,7 +44,7 @@ export const style = v => ({
 
     '.light &&': {
       backgroundColor: v.background.light,
-    }
+    },
   },
 
   a: {

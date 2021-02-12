@@ -17,6 +17,7 @@ export const style = v => ({
   margin: '0 1em 3em',
   padding: '2em 0.5em 2em 1em',
   margin: '0 auto',
+  maxWidth: '1200px',
 
   p: {
     lineHeight: 1.4,
@@ -24,6 +25,6 @@ export const style = v => ({
   },
 
   [`@media screen and (min-width: ${v.widths.laptop})`]: {
-    padding: '4em 0 0 2em',
+    padding: '4em 0 0',
   },
 })

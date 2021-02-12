@@ -8,6 +8,7 @@ export const View = ({ class: cl, src, type = 'jpg', alt, width, height }) => [
 export const style = {
   display: 'inline-block',
   width: '100%',
+  margin: '2em 0 0',
 
   img: {
     maxWidth: '95%',

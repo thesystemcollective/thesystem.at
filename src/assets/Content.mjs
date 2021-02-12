@@ -2,11 +2,12 @@ export const View = (props, children) => {
   if (!children) {
     children = props
     props = {
-      class: 'Content'
+      class: 'Content',
     }
   }
 
-  props.class = props.class && !props.class.includes('Content') ? `Content ${props.class}` : 'Content'
+  props.class =
+    props.class && !props.class.includes('Content') ? `Content ${props.class}` : 'Content'
 
   return div(props, children)
 }

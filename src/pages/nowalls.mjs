@@ -4,11 +4,12 @@ export const state = {
 
 export const View = () => [
   Content([
-    Slogan('NoWalls: 2021'),
+    Slogan('No Walls: 2021'),
 
     Text([
       p([
-        'The exhibition series "No Walls"',
+        'The exhibition series ',
+        Quote('No Walls for ...'),
         ' creates decentralized, localized art experiences all over Vienna and beyond.',
       ]),
       p([

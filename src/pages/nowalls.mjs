@@ -29,7 +29,7 @@ export const View = () => [
 
     Text([
       p([
-        'Starting on the 1st of May,',
+        'Starting on the 1st of May 2021,',
         ' we will feature artists and their artworks.',
         ' Featured artworks can be positioned worldwide.',
       ]),

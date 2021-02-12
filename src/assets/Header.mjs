@@ -55,7 +55,7 @@ export const style = v => ({
     height: '2.6em',
     width: 'auto',
     float: 'left',
-    margin: '0.25em',
+    margin: '0.25em 0.7em 0.25em 0',
   },
 
   'h1, h2': {

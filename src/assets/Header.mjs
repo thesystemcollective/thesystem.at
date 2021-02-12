@@ -52,7 +52,7 @@ export const style = v => ({
   },
 
   svg: {
-    height: '2.9em',
+    height: '2.6em',
     width: 'auto',
     float: 'left',
     margin: '0.25em',
@@ -64,10 +64,10 @@ export const style = v => ({
     fontWeight: 500,
   },
   h1: {
-    fontSize: '1.8em',
+    fontSize: '1.6em',
   },
   h2: {
-    fontSize: '1.5em',
+    fontSize: '1.3em',
   },
 
   [`@media screen and (min-width: ${v.widths.laptop})`]: {

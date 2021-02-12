@@ -52,7 +52,7 @@ export const style = v => ({
   },
 
   svg: {
-    height: '3.3em',
+    height: '2.9em',
     width: 'auto',
     float: 'left',
     margin: '0.25em',
@@ -64,10 +64,10 @@ export const style = v => ({
     fontWeight: 500,
   },
   h1: {
-    fontSize: '2em',
+    fontSize: '1.8em',
   },
   h2: {
-    fontSize: '1.7em',
+    fontSize: '1.5em',
   },
 
   [`@media screen and (min-width: ${v.widths.laptop})`]: {
@@ -75,6 +75,7 @@ export const style = v => ({
     backgroundColor: v.background.dark,
     margin: 0,
     top: 0,
+    padding: '0.2em 0',
 
     '.light &&': {
       backgroundColor: v.background.light,
@@ -85,7 +86,7 @@ export const style = v => ({
     },
     '.Menu': {
       float: 'right',
-      margin: '0.5em 0 0',
+      padding: '1em 0.25em 0.2em 0',
       position: 'relative',
       textAlign: 'right',
       width: 'auto',

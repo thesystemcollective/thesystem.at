@@ -9,7 +9,7 @@ export const View = ({
   id = '',
 }) =>
   div({ class: 'ExhibitionWrapper', id }, [
-    div({ class: 'Dots' }, [Polkadot(), PreviewImage(img)]),
+    PreviewImage(img),
 
     div({ class: 'sections' }, [
       h2(title),
@@ -73,7 +73,6 @@ export const style = vars => ({
 
   '.VideoEmbed': {
     height: '56vw',
-    width: '100vw',
     top: 0,
     right: 0,
     clear: 'both',
@@ -86,10 +85,6 @@ export const style = vars => ({
 
     '&:first-child': {
       margin: '-3em 0 0',
-    },
-
-    '.Polkadot': {
-      left: 0,
     },
 
     img: {

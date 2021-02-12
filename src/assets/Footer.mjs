@@ -93,13 +93,14 @@ export const View = state =>
   ])
 
 export const style = v => ({
-  backgroundColor: v.background.dark,
+  backgroundColor: '#20262E',
   clear: 'both',
   color: v.text.dark,
   margin: '2em 0 0',
   padding: `5em ${v.paddingLeft} .5em`,
   position: 'relative',
   fontSize: '0.8em',
+  lineHeight: 1.4,
 
   h2: {
     padding: 0,
@@ -108,6 +109,7 @@ export const style = v => ({
 
   '.Privacy': {
     margin: '3em 0 0',
+    maxWidth: '1000px',
   },
 
   '#Magic &&': {
@@ -122,7 +124,7 @@ export const style = v => ({
 
   '.Container': {
     textAlign: 'left',
-    maxWidth: v.maxPageWidth,
+    maxWidth: '1200px',
     margin: '0 auto',
   },
 

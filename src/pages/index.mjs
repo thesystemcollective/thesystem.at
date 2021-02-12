@@ -51,7 +51,11 @@ export const View = ({ artists, collectives }) => [
         ' allowing the free placement of works of art in public spaces.',
       ]),
 
-      p(Quote('Art is not the way to more democracy and equality, but art can be the impetus for a dialog.')),
+      p(
+        Quote(
+          'Art is not the way to more democracy and equality, but art can be the impetus for a dialog.',
+        ),
+      ),
     ]),
   ]),
 
@@ -79,7 +83,11 @@ export const View = ({ artists, collectives }) => [
         ' and make the results of our work accessible to a broad public.',
       ]),
 
-      p(Quote('Boundaries lead to the death of art and culture. The profit motive creates boundaries.')),
+      p(
+        Quote(
+          'Boundaries lead to the death of art and culture. The profit motive creates boundaries.',
+        ),
+      ),
 
       // p([
       //   'We rely on free participation in public spaces,',

@@ -4,6 +4,8 @@ export const state = {
 
 export const View = () => [
   Content([
+    Slogan('2021'),
+
     Text([
       p([
         'The exhibition series "No Walls"',
@@ -18,9 +20,11 @@ export const View = () => [
         ' on retracing of power structures and on dissolving them.',
       ]),
     ]),
+  ]),
 
-    VideoEmbed({ src: 'D6i50aYe-X8' }), // demo video
+  Content(VideoEmbed({ src: 'D6i50aYe-X8' })),
 
+  Content([
     Slogan('No Walls For Artists'),
 
     Text([
@@ -30,8 +34,9 @@ export const View = () => [
         ' Featured artworks can be positioned worldwide.',
       ]),
     ]),
+  ]),
 
-
+  Content([
     Slogan('No Walls for Education / Science'),
 
     Text([
@@ -40,7 +45,9 @@ export const View = () => [
         ' working together to represent our shared visions.',
       ]),
     ]),
+  ]),
 
+  Content([
     Slogan('No Walls for Museums'),
 
     Text([
@@ -50,6 +57,6 @@ export const View = () => [
         ' "No Walls for Museums" will position artworks around austrian museums and close to art exhibitions, institutions and other art and culture related places.',
         // ' These artworks will be a permanent commemoration to those important places of culture and history.',
       ]),
-    ])
-  ])
+    ]),
+  ]),
 ]

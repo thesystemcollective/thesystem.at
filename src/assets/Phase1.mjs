@@ -14,7 +14,7 @@ export const View = () =>
   )
 
 export const style = vars => ({
-  margin: '0 1em 3em',
+  margin: '3em 1em',
 
   '> div': {
     display: 'inline-block',
@@ -37,7 +37,7 @@ export const style = vars => ({
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
     width: '70vw',
-    margin: '0 auto 3em',
+    margin: '3em auto',
 
     '.address': {
       float: 'left',

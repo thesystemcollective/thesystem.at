@@ -2,7 +2,7 @@ export const View = () =>
   div({ class: 'Partners' }, [
     h3('Commissioned by:'),
 
-    Link({ title: 'commissioned by kör', to: 'https://koer.or.at' }, [
+    Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
       Img({
         class: 'koer',
         alt: 'kör',
@@ -22,7 +22,7 @@ export const View = () =>
     h3('Support:'),
 
     Link(
-      { to: 'https://usus.wien' },
+      { to: 'https://www.usus.wien' },
       Img({
         title: 'yppshop provided by usus.wien',
         src: 'https://thesystem.at/social/usus.png',

@@ -6,6 +6,7 @@
   "description": "the system.",
   "license": "AGPL-3.0",
   "homepage": "https://thesystem.at",
+  "type": "module",
   "engines": {
     "node": ">=14.2.0"
   },
@@ -33,13 +34,13 @@
   },
   "dependencies": {
     "@magic-modules/no-spy": "0.0.6",
-    "@magic-modules/video-embed": "0.0.5",
-    "@magic/core": "0.0.103",
+    "@magic-modules/video-embed": "0.0.6",
+    "@magic/core": "0.0.129",
     "@thesystemcollective/magic-theme": "github:thesystemcollective/magic-theme"
   },
   "devDependencies": {
-    "@magic/format": "0.0.21",
-    "@magic/test": "0.1.60"
+    "@magic/format": "0.0.29",
+    "@magic/test": "0.1.74"
   },
   "contributors": [
     {

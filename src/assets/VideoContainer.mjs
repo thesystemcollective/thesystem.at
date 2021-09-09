@@ -7,7 +7,8 @@ export const View = url =>
     // VideoEmbed({ src: 'eERg-H03cvY' }), // sandkasten
     // VideoEmbed({ src: 'tzPXBR5AYJs' }), // work
     // VideoEmbed({ src: 'd-cfixGDwNQ' }), // demo video
-    VideoEmbed({ src: 'D6i50aYe-X8' }), // no walls video
+    // VideoEmbed({ src: 'D6i50aYe-X8' }), // no walls video
+    VideoEmbed({ id: 'v2M9uoPMzrc' }), // artificial museum manifest
   ])
 
 export const style = vars => ({

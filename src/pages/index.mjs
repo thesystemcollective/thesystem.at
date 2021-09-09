@@ -7,7 +7,7 @@ export const View = state => [
       ' is a syndicate of independent',
       ' artists, makers, programmers, engineers, philosophers, activists, and scientists,',
       ' collectively using art and technology to transform our world.',
-      ' We believe in a literal definition of "open source",',
+      ' We believe in a literal definition of "common goods",',
       ' and convert public spaces into an Artificial Museum, ready for artists to freely position their art.',
     ]),
 

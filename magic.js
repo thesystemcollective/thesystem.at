@@ -1,6 +1,6 @@
 export default {
   ROOT: 'src',
-  WEB_ROOT: '/',
+  WEB_ROOT: '/thesystem-rework/',
   URL: 'thesystem.at',
   PUBLIC: 'docs',
   THEME: '@thesystemcollective/magic-theme',

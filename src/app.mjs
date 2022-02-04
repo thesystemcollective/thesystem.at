@@ -4,4 +4,19 @@ export const state = {
   image: 'https://thesystem.at/thesystem_preview_image.jpg',
 
   pageClass: 'light',
+
+  menu: [
+    {
+      to: '/',
+      text: 'about us',
+    },
+    {
+      to: '/#manifest',
+      text: 'manifest',
+    },
+    {
+      to: '/#collaborations',
+      text: 'collaborations',
+    },
+  ],
 }

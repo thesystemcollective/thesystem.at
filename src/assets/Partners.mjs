@@ -1,28 +1,11 @@
 export const View = () =>
   div({ class: 'Partners' }, [
-    h3('Commissioned by:'),
+    h2('Our Partners:'),
 
-    Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
-      Img({
-        class: 'koer',
-        alt: 'kör',
-        src: 'https://static.artificialmuseum.com/support/koer.svg',
-        width: '255',
-        height: '100',
-      }),
-      Img({
-        class: 'koer',
-        alt: 'wien kultur',
-        src: 'https://static.artificialmuseum.com/support/wien-kultur.svg',
-        width: '242',
-        height: '100',
-      }),
-    ]),
-
-    h3('Support:'),
+    p('The following institutions and collectives will partner with us in 2022.'),
 
     Link(
-      { to: 'https://www.usus.wien' },
+      { to: 'https://usus.wien' },
       Img({
         title: 'yppshop provided by usus.wien',
         src: 'https://thesystem.at/social/usus.png',
@@ -45,7 +28,7 @@ export const View = () =>
 export const style = vars => ({
   padding: 0,
   position: 'relative',
-  margin: '4em 0 0 2vw',
+  margin: '4em 0 0',
   width: 'auto',
 
   a: {
@@ -56,16 +39,5 @@ export const style = vars => ({
     height: 'auto',
     margin: '0 2em 0 0',
     maxWidth: '90vw',
-  },
-
-  '.koer': {
-    display: 'block',
-    margin: '0 0 1em',
-  },
-
-  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
-    '.koer': {
-      display: 'inherit',
-    },
   },
 })

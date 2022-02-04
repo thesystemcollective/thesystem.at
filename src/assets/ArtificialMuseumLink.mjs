@@ -1,7 +1,7 @@
-export const View = () => 
+export const View = () =>
   Link({ class: 'ArtificialMuseumLink', to: 'https://artificialmuseum.com', text: 'Visit the Artificial Museum' })
 
-export const style = vars => ({
+export const style = vars => console.log({ vars }) || ({
   backgroundColor: vars.background.light,
   color: vars.text.light,
   display: 'inline-block',

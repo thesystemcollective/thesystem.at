@@ -48,7 +48,7 @@ export const View = state => [
 
   Partners(),
 
-  BigPic({ src: '/bigpic', type: 'png' }),
+  BigPic({ name: '/bigpic', type: 'png' }),
 
   div({ id: 'collaborations', class: 'Collaborations' }, [
     h2('Call for Collaboration'),

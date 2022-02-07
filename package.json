@@ -33,6 +33,7 @@
     "url": "https://github.com/thesystemcollective/thesystem.at/issues"
   },
   "dependencies": {
+    "@magic-libraries/replace-slash-slash": "0.0.1",
     "@magic-modules/no-spy": "0.0.6",
     "@magic-modules/video-embed": "0.0.6",
     "@magic/core": "0.0.136",

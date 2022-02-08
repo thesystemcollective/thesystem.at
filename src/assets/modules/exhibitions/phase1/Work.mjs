@@ -3,7 +3,7 @@ export const View = () =>
     title: '"Work"',
     id: 'work',
     img: {
-      src: '/thesystem-zirkusmops-work.jpg',
+      src: '/exhibitions/phase1/work/thesystem-zirkusmops-work.jpg',
       height: 1200,
       width: 1028,
     },
@@ -20,42 +20,42 @@ export const View = () =>
 
     exhibitionImages: [
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-01.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-02.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-02.jpg',
         height: 679,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-03.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-03.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-04.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-04.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-05.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-05.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-06.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-06.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-07.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-07.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/work/thesystem-zirkusmops-work-08.jpg',
+        src: '/exhibitions/phase1/work/thesystem-zirkusmops-work-08.jpg',
         height: 1600,
         width: 1200,
       },

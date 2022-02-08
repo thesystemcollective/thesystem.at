@@ -3,23 +3,23 @@ export const View = () =>
     title: ['fluesterkonus', br(), 'inter.aktion'],
     id: 'fluesterkonus',
     img: {
-      src: '/thesystem-mariakoller-fluesterkonus.jpg',
+      src: '/exhibitions/phase1/fluesterkonus/thesystem-mariakoller-fluesterkonus.jpg',
       height: 1200,
       width: 800,
     },
     exhibitionImages: [
       {
-        src: '/exhibitions/fluesterkonus/thesystem-choramalik-fluesterkonus-01.jpg',
+        src: '/exhibitions/phase1/fluesterkonus/thesystem-choramalik-fluesterkonus-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/fluesterkonus/thesystem-choramalik-fluesterkonus-02.jpg',
+        src: '/exhibitions/phase1/fluesterkonus/thesystem-choramalik-fluesterkonus-02.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/fluesterkonus/thesystem-choramalik-fluesterkonus-03.jpg',
+        src: '/exhibitions/phase1/fluesterkonus/thesystem-choramalik-fluesterkonus-03.jpg',
         height: 1600,
         width: 1200,
       },

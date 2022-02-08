@@ -3,34 +3,34 @@ export const View = () =>
     title: 'Fake Mirror',
     id: 'fake-mirror',
     img: {
-      src: '/thesystem-litto-thebody.jpg',
+      src: '/exhibitions/phase1/hrlitto/thesystem-litto-thebody.jpg',
       height: 900,
       width: 1200,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/hrlitto/thesystem-mslitto-hrlitto-01.jpg',
+        src: '/exhibitions/phase1/hrlitto/thesystem-mslitto-hrlitto-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/hrlitto/thesystem-mslitto-hrlitto-02.jpg',
+        src: '/exhibitions/phase1/hrlitto/thesystem-mslitto-hrlitto-02.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/hrlitto/thesystem-mslitto-hrlitto-03.jpg',
+        src: '/exhibitions/phase1/hrlitto/thesystem-mslitto-hrlitto-03.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/hrlitto/thesystem-mslitto-hrlitto-04.jpg',
+        src: '/exhibitions/phase1/hrlitto/thesystem-mslitto-hrlitto-04.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/hrlitto/thesystem-mslitto-hrlitto-05.jpg',
+        src: '/exhibitions/phase1/hrlitto/thesystem-mslitto-hrlitto-05.jpg',
         height: 1600,
         width: 1200,
       },

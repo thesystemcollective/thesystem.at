@@ -3,44 +3,44 @@ export const View = () =>
     title: 'System, Struktur & DeFragmentierung',
     id: 'system-struktur-defragmentierung',
     img: {
-      src: '/thesystem-sandkasten-syndikat.jpg',
+      src: '/exhibitions/phase1/sandkasten/thesystem-sandkasten-syndikat.jpg',
       height: 1380,
       width: 1080,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-01.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-02.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-02.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-03.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-03.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-04.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-04.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-05.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-05.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-06.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-06.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/sandkasten/thesystem-sandkastensyndikat-07.jpg',
+        src: '/exhibitions/phase1/sandkasten/thesystem-sandkastensyndikat-07.jpg',
         height: 900,
         width: 1200,
       },

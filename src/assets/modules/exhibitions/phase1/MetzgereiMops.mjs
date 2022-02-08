@@ -3,48 +3,48 @@ export const View = () =>
     title: ['WILLKOMMEN IN DER', br(), 'METZGEREI MOPS!'],
     id: 'metzgereimops',
     img: {
-      src: '/thesystem-zirkusmops-familiemops.jpg',
+      src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-familiemops.jpg',
       height: 640,
       width: 718,
     },
     exhibitionImages: [
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-01.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-02.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-02.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-03.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-03.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-04.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-04.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-05.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-05.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-06.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-06.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-07.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-07.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/metzgereimops/thesystem-zirkusmops-metzgereimops-08.jpg',
+        src: '/exhibitions/phase1/metzgereimops/thesystem-zirkusmops-metzgereimops-08.jpg',
         height: 1600,
         width: 1200,
       },

@@ -3,19 +3,19 @@ export const View = () =>
     title: 'TheSystem: garden',
     id: 'thegarden',
     img: {
-      src: '/thesystem-thegarden.jpg',
+      src: '/exhibitions/phase1/thegarden/thesystem-thegarden.jpg',
       height: 676,
       width: 1200,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/thegarden/thesystem-thegarden-01.jpg',
+        src: '/exhibitions/phase1/thegarden/thesystem-thegarden-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/thegarden/thesystem-thegarden-02.jpg',
+        src: '/exhibitions/phase1/thegarden/thesystem-thegarden-02.jpg',
         height: 676,
         width: 1200,
       },

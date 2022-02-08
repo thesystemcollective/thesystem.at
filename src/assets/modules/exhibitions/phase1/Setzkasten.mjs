@@ -3,39 +3,39 @@ export const View = () =>
     title: 'SETZKASTEN X TheSystem',
     id: 'setzkasten',
     img: {
-      src: '/thesystem_setzkastenwien.jpg',
+      src: '/exhibitions/phase1/setzkasten/thesystem_setzkastenwien.jpg',
       height: 1000,
       width: 667,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/setzkasten/thesystem-setzkasten-01.jpg',
+        src: '/exhibitions/phase1/setzkasten/thesystem-setzkasten-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/setzkasten/thesystem-setzkasten-02.jpg',
+        src: '/exhibitions/phase1/setzkasten/thesystem-setzkasten-02.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/setzkasten/thesystem-setzkasten-03.jpg',
+        src: '/exhibitions/phase1/setzkasten/thesystem-setzkasten-03.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/setzkasten/thesystem-setzkasten-04.jpg',
+        src: '/exhibitions/phase1/setzkasten/thesystem-setzkasten-04.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/setzkasten/thesystem-setzkasten-05.jpg',
+        src: '/exhibitions/phase1/setzkasten/thesystem-setzkasten-05.jpg',
         height: 1600,
         width: 1200,
       },
       {
-        src: '/exhibitions/setzkasten/thesystem-setzkasten-06.jpg',
+        src: '/exhibitions/phase1/setzkasten/thesystem-setzkasten-06.jpg',
         height: 1600,
         width: 1200,
       },

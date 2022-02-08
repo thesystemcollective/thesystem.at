@@ -3,24 +3,24 @@ export const View = () =>
     title: 'HeartBreakHotel',
     id: 'heartbreakhotel',
     img: {
-      src: '/thesystem-dagmarrohm-heartbreakhotel.jpg',
+      src: '/exhibitions/phase1/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel.jpg',
       height: 1020,
       width: 1013,
     },
 
     exhibitionImages: [
       {
-        src: '/exhibitions/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-01.jpg',
+        src: '/exhibitions/phase1/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-02.jpg',
+        src: '/exhibitions/phase1/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-02.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-03.jpg',
+        src: '/exhibitions/phase1/heartbreakhotel/thesystem-dagmarrohm-heartbreakhotel-03.jpg',
         height: 900,
         width: 1200,
       },

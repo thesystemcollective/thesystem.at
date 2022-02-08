@@ -3,7 +3,7 @@ export const View = () =>
     title: 'Max Mustermann',
     id: 'maxmustermann',
     img: {
-      src: '/thesystem-noemikiss-maxmustermann.jpg',
+      src: '/exbhibitions/maxmustermann/thesystem-noemikiss-maxmustermann.jpg',
       height: 1200,
       width: 842,
     },
@@ -19,17 +19,17 @@ export const View = () =>
 
     exhibitionImages: [
       {
-        src: '/exhibitions/maxmustermann/thesystem-noemikiss-maxmustermann-01.jpg',
+        src: '/exhibitions/phase1/maxmustermann/thesystem-noemikiss-maxmustermann-01.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/maxmustermann/thesystem-noemikiss-maxmustermann-02.jpg',
+        src: '/exhibitions/phase1/maxmustermann/thesystem-noemikiss-maxmustermann-02.jpg',
         height: 900,
         width: 1200,
       },
       {
-        src: '/exhibitions/maxmustermann/thesystem-noemikiss-maxmustermann-03.jpg',
+        src: '/exhibitions/phase1/maxmustermann/thesystem-noemikiss-maxmustermann-03.jpg',
         height: 900,
         width: 1200,
       },

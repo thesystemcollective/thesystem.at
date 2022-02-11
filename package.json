@@ -36,8 +36,8 @@
     "@magic-libraries/replace-slash-slash": "0.0.1",
     "@magic-modules/no-spy": "0.0.6",
     "@magic-modules/video-embed": "0.0.6",
-    "@magic/core": "0.0.136",
-    "@thesystemcollective/magic-theme": "github:thesystemcollective/magic-theme"
+    "@magic-modules/light-switch": "0.0.10",
+    "@magic/core": "0.0.136"
   },
   "devDependencies": {
     "@magic/format": "0.0.38",

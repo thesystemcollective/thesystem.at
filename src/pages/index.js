@@ -332,6 +332,11 @@ export const style = vars => ({
     position: 'relative',
     top: '-10vw',
     width: '30%',
+
+    img: {
+      height: '100%',
+      width: '100%',
+    },
   },
   '.ArtifactImage2': {
     float: 'left',
@@ -339,6 +344,11 @@ export const style = vars => ({
     position: 'relative',
     top: '-5vw',
     width: '55%',
+
+    img: {
+      height: '100%',
+      width: '100%',
+    },
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {

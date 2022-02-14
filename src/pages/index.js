@@ -32,18 +32,13 @@ export const View = state => [
   section({ id: 'manifest', class: 'Manifest' }, [
     h2('MANIFEST'),
 
-    p(
-      { class: 'Big' },
-      "We don't need space, time is irrelevant, objects stay as useful as the user.",
-    ),
-
     p([
       'The ',
       i('SystemKollektiv'),
       ' is a syndicate of independent',
       ' artists, makers, programmers, engineers, philosophers, activists, and scientists,',
       ' collectively using art and technology to transform our world.',
-      ' We believe in a literal definition of "common goods",',
+      ' We believe in a literal definition of "common goods"',
       ' and convert public spaces into an ',
       Link({ to: 'https://artificialmuseum.com', text: 'Artificial Museum' }),
       ', ready for artists to freely position their art.',
@@ -51,7 +46,12 @@ export const View = state => [
 
     p('Our method is an intermixture of universes, physical, virtual and imaginary.'),
 
-    div(Link({ class: 'Button', to: '/manifest/', text: 'Read our manifest' })),
+    p(
+      { class: 'Big' },
+      "We don't need space, time is irrelevant, objects stay as useful as the user.",
+    ),
+
+    // div(Link({ class: 'Button', to: '/manifest/', text: 'Read our manifest' })),
   ]),
 
   section({ id: 'mission', class: 'Mission' }, [
@@ -117,9 +117,11 @@ export const View = state => [
         p(
           'Our obligation as artists, technologists, scientists and other creatives is displaying those visions and making the needs for change obvious and ubiquitous.',
         ),
-        p(
-          'By adding Imaginariums to reality we are not only enabled to connect people all over the world, we can facilitate the sharing of artistic work on an unlimited virtual version of earth.',
-        ),
+        p([
+          'By adding imaginariums to reality we are able to connect people all over the world,',
+          ' and facilitate the sharing of artistic work on a virtual version of earth.',
+        ]),
+
         p(
           'It allows the visitor to partake in exhibitions all over the earth, and soon maybe even on other planets, while the artists are not being limited by choice of venue, budget or other real world problems negatively interfering with the display of art',
         ),
@@ -127,7 +129,7 @@ export const View = state => [
 
       div({ class: 'Big right' }, 'This is our final chance to act.'),
 
-      Picture({ name: '/moon', extension: 'jpg' }),
+      Picture({ class: 'Moon', name: '/moon', extension: 'jpg' }),
     ]),
   ]),
 
@@ -165,7 +167,7 @@ export const View = state => [
       ' our partners handle the local open calls and coordinate with the artists.',
     ]),
 
-    Link({ class: 'Button', text: 'CONTACT US', to: 'mailto:thesystemcollective@gmail.com' }),
+    div(Link({ class: 'Button', text: 'CONTACT US', to: 'mailto:thesystemcollective@gmail.com' })),
   ]),
 
   Commissioned(),
@@ -173,12 +175,25 @@ export const View = state => [
 
 export const style = vars => ({
   section: {
-    'p, div, h1, h2, h3, h4, h5': {
+    clear: 'both',
+    margin: '2em 0',
+
+    '> p, > div, > h1, > h2, > h3, > h4, > h5': {
+      margin: '0 auto',
+      maxWidth: '1300px',
       padding: '0 5vw',
     },
 
     '.SubSection': {
+      margin: 0,
+      maxWidth: 'inherit',
       padding: 0,
+
+      '> p, > div, > h1, > h2, > h3, > h4, > h5': {
+        margin: '0 auto',
+        maxWidth: '1300px',
+        padding: '0 5vw',
+      },
     },
 
     h2: {
@@ -204,6 +219,13 @@ export const style = vars => ({
           background: `linear-gradient(180deg, #6d9eac 0%, ${vars.replayColor} 0.5%, ${vars.background.light} 40%)`,
         },
       },
+    },
+  },
+
+  '.Picture.Moon': {
+    img: {
+      display: 'block',
+      margin: '0 auto',
     },
   },
 
@@ -239,11 +261,9 @@ export const style = vars => ({
     },
   },
 
-
-
-  '.Big': {
+  'body section .Big': {
     fontSize: '2em',
-    margin: '1em 0',
+    margin: '1em auto',
 
     '&.Left': {
       float: 'left',
@@ -300,6 +320,11 @@ export const style = vars => ({
   '.MapImage': {
     height: 'auto',
     width: '100%',
+
+    img: {
+      height: 'auto',
+      width: '100%',
+    },
   },
   '.ArtifactImage1': {
     float: 'right',

@@ -101,8 +101,7 @@ export default (v = {}) => {
 
     '.Wrapper': {
       width: '100%',
-      maxWidth: '1300px',
-      margin: '0 auto',
+      maxWidth: 'auto',
     },
 
     '.PageHeader': {

@@ -3,9 +3,9 @@ export default {
   WEB_ROOT: '/thesystem-rework/',
   URL: 'thesystem.at',
   PUBLIC: 'docs',
-  THEME: '@thesystemcollective/magic-theme',
+  THEME: 'thesystem',
   CNAME: 'thesystem.at',
   IGNORED_STATIC: 'xcf',
 
-  HOIST: ['NoSpy'],
+  HOIST: ['NoSpy', 'LightSwitch'],
 }

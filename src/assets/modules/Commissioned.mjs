@@ -1,34 +1,36 @@
 export const View = () =>
-  div({ class: 'Commissioned' }, [
+  section({ class: 'Commissioned' }, [
     h3('Commissioned by:'),
 
-    Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
+    div([
+      Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
+        Img({
+          class: 'koer',
+          alt: 'kör',
+          src: 'https://static.artificialmuseum.com/support/koer.svg',
+          width: 255,
+          height: 100,
+        }),
+        Img({
+          class: 'koer',
+          alt: 'wien kultur',
+          src: 'https://static.artificialmuseum.com/support/wien-kultur.svg',
+          width: 242,
+          height: 100,
+        }),
+      ]),
+
+      Link({ to: 'https://wirtschaftsagentur.at', title: 'Wirtschaftsagentur Wien' }, [
+        Img({ src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png', height: 100, width: 100 }),
+      ]),
+
       Img({
-        class: 'koer',
-        alt: 'kör',
-        src: 'https://static.artificialmuseum.com/support/koer.svg',
-        width: 255,
+        src: 'https://static.artificialmuseum.com/support/petmanfoundation.png',
+        title: 'Petman Foundation',
         height: 100,
-      }),
-      Img({
-        class: 'koer',
-        alt: 'wien kultur',
-        src: 'https://static.artificialmuseum.com/support/wien-kultur.svg',
-        width: 242,
-        height: 100,
+        width: 100,
       }),
     ]),
-
-    Link({ to: 'https://wirtschaftsagentur.at', title: 'Wirtschaftsagentur Wien' }, [
-      Img({ src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png', height: 100, width: 100 }),
-    ]),
-
-    Img({
-      src: 'https://static.artificialmuseum.com/support/petmanfoundation.png',
-      title: 'Petman Foundation',
-      height: 100,
-      width: 100,
-    }),
   ])
 
 export const style = vars => ({
@@ -67,7 +69,6 @@ export const style = vars => ({
 
   '.koer': {
     display: 'block',
-    margin: '0 0 1em',
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {

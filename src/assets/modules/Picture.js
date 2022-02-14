@@ -1,14 +1,26 @@
 export const View = (props = {}) => {
   CHECK_PROPS(props, propTypes, 'Picture')
 
-  const { name, extension = 'jpg', sources = ['webp'], ...args } = props
+  const { name, extension = 'jpg', sources = ['webp'], class: cl, ...args } = props
 
   if (!args.alt) {
     args.role = 'presentation'
     args.alt = ''
   }
 
-  return picture({ class: 'Picture' }, [
+  const p = {
+    class: 'Picture'
+  }
+
+  if (cl) {
+    if (!props.class.includes('Picture')) {
+      p.class += ` ${cl}`
+    } else {
+      p.class = cl
+    }
+  }
+
+  return picture(p, [
     ...sources.map(ext =>
       source({
         type: `image/${ext}`,

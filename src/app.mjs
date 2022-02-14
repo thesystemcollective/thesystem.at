@@ -3,20 +3,20 @@ export const state = {
   description: 'THESYSTEM - August – Oktober 2020 - Yppenplatz 5, 1160 Wien',
   image: 'https://thesystem.at/thesystem_preview_image.jpg',
 
-  pageClass: 'light',
+  theme: 'dark',
 
   menu: [
     {
       to: '/',
-      text: 'about us',
+      text: 'about',
     },
     {
-      to: '/#manifest',
-      text: 'manifest',
+      to: '/#mission',
+      text: 'mission',
     },
     {
-      to: '/#collaborations',
-      text: 'collaborations',
+      to: '/#participate',
+      text: 'participate',
     },
   ],
 }

@@ -3,7 +3,7 @@ export const View = () =>
     title: 'Max Mustermann',
     id: 'maxmustermann',
     img: {
-      src: '/exbhibitions/maxmustermann/thesystem-noemikiss-maxmustermann.jpg',
+      src: '/exhibitions/phase1/maxmustermann/thesystem-noemikiss-maxmustermann.jpg',
       height: 1200,
       width: 842,
     },

@@ -1,16 +1,45 @@
 export const View = state => [
-  div({ class: 'PageHeader' }, [Slogan({ subTitle: 'Kollektiv' }), ArtificialMuseumLink()]),
+  section({ class: 'Hero' }, [
+    // p(b('Hello World.')),
+    // p('We are the SystemKollektiv'),
 
-  div({ class: 'Game' }, [
-    'Our Game with artificial museum logo',
+    p({ class: 'Branding' }, [
+      'Our mission is to create, procure, research, distribute,',
+      ' and preserve digitized art in the Artificial Museum.',
+    ]),
+
+    div(Link({ class: 'Button', to: 'https://artificialmuseum.com', text: 'VISIT OUR MUSEUM' })),
   ]),
 
-  div({ id: 'manifest', class: 'Manifest' }, [
-    h2('Manifest'),
+  div({ class: 'MapArea' }, [
+    Picture({ class: 'MapImage', name: '/map', extension: 'jpg', height: 434, width: 900 }),
+    Picture({
+      class: 'ArtifactImage1',
+      name: '/art_01',
+      extension: 'jpg',
+      height: 800,
+      width: 600,
+    }),
+    Picture({
+      class: 'ArtifactImage2',
+      name: '/art_02',
+      extension: 'jpg',
+      height: 600,
+      width: 800,
+    }),
+  ]),
+
+  section({ id: 'manifest', class: 'Manifest' }, [
+    h2('MANIFEST'),
+
+    p(
+      { class: 'Big' },
+      "We don't need space, time is irrelevant, objects stay as useful as the user.",
+    ),
 
     p([
       'The ',
-      i('SystemKollectiv'),
+      i('SystemKollektiv'),
       ' is a syndicate of independent',
       ' artists, makers, programmers, engineers, philosophers, activists, and scientists,',
       ' collectively using art and technology to transform our world.',
@@ -22,63 +51,109 @@ export const View = state => [
 
     p('Our method is an intermixture of universes, physical, virtual and imaginary.'),
 
-    p(i("We don't need space, time is irrelevant, objects stay as useful as the user.")),
-
-    p('To fulfill this obligation, we:'),
-
-    h3('Create:'),
-    p('We manifest art as digital expression and representation of real and imagined phantasms.'),
-    p('These artifacts are not meant to be replicas, by using the unique possibilities of mixed reality, art can come alive and allow a multi - dimensional experience to the beholder.'),
-
-    h3('Procure:'),
-    p('To commission works for our collection, we actively engage and collaborate with artists, collectives and institutions.'),
-    p('We host regular educational workshops, teaching the fundamentals needed to create artifacts for the metaverse.'),
-    p('We support our collaboration partners, both institutions and artists, in the procurement of public and / or private funding for their art projects and exhibitions.'),
-
-    h3('Research:'),
-    p('There is a constant flow of new concepts to explore when you build something that does not exist.Our research covers a host of topics, including novel artistic techniques, game theory regarding user retention and monetization, censorship resistance for our platform and artifacts and many more.'),
-
-    h3('Distribute:'),
-    p(['Our ', Link({ to: 'https://artificialmuseum.com', text: 'web app' }), ' is our portal hub, providing visitors, artists, collectives and institutions with ways to collaborate, contribute, connect, create and collect.']),
-
-    h3('Preserve:'),
-    p('The Artificial Museum aims to create a public and permanent record, preserving moments and objects in time and space.'),
-
+    div(Link({ class: 'Button', to: '/manifest/', text: 'Read our manifest' })),
   ]),
 
-  Partners(),
+  section({ id: 'mission', class: 'Mission' }, [
+    div({ class: 'GameOver SubSection' }, [
+      h2('MISSION'),
 
-  BigPic({ name: '/bigpic', type: 'png' }),
+      p([
+        'We collaborate with artists, curators, organizers, collectives and institutions,',
+        ' expanding our network and achieving our shared objective:',
+      ]),
 
-  div({ id: 'collaborations', class: 'Collaborations' }, [
-    h2('Call for Collaboration'),
-    h3('2030: Game over or Replay?'),
-    p('This is our final chance to act.'),
+      p({ class: 'Big' }, [
+        'Augmenting our world with new ideas for change',
+        ' and forming the cultural heritage of the future.',
+      ]),
 
-    b('Hello world.'),
-    p('We are the SystemKollektiv.'),
-    p('Our mission is to create, procure, research, distribute, and preserve digitized art in the Artificial Museum.'),
+      // p([
+      //   'We invite artists of all trades, both analog and digital,',
+      //   ' to create an augmented reality artifact and become a permanent part of our museum.',
+      // ]),
 
-    h3('Mission'),
-    p('We collaborate with artists, curators, organizers, collectives and institutions, expanding our network and helping us in our mission: augmenting our world with new ideas for change and forming the cultural heritage of the future.'),
+      p([
+        'We are already, more than ever,',
+        ' communicating and interacting in spaces that try to emulate an imaginary reality,',
+        // ' and the experience of virtual reality seems to be coming closer and closer to',
+        ' something indistinguishable from and interwoven with our material spaces,',
+        ' an inevitable future of humanity.',
+      ]),
 
-    p('We invite artists of all trades, both analog and digital, to create a digital augmented reality artifact and become a permanent part of our museum.'),
+      p([
+        'Whatever the future may actually bring,',
+        ' we believe that we should try to shape',
+        ' technologies, social revolutions, ideas and spaces,',
+        ' so that humankind will be enabled to reimagine itself.',
+      ]),
 
-    h3('Motivation'),
-    p('We are already, more than ever, communicating and interacting in spaces that try to emulate an imaginary reality, and the experience of virtual reality seems to be coming closer and closer to something indistinguishable from and interwoven with our material spaces, an inevitable future of humanity.'),
+      // p([
+      //   'We want to finally be able to process changes to society',
+      //   ' by representing ideas and critiques and taking a stance on them.',
+      // ]),
 
-    p('Whatever the future may actually bring, we believe that we should try to shape technologies, social revolutions, ideas and spaces, so that humankind will be enabled to reimagine itself.'),
-    p('We want to finally be able to process changes to society by representing ideas and critiques and taking a stance on them.'),
+      p([
+        'There is not much time left until the beginning of 2030.',
+        ' Creative eyes can already catch a glimpse of the needed changes,',
+        ' a vision for humanity’s future that is reachable, sustainable and,',
+        ' frankly, better than what we have now.',
+      ]),
+      p([
+        ' Those same eyes also see the alternative future of climate disasters,',
+        ' social disarray and division,',
+        ' markets completely detached from reality and humanity enslaved by the machine.',
+      ]),
 
-    p('There is not much time left until the beginning of 2030. Creative eyes can already catch a glimpse of the needed changes, a vision for humanity’s future that is reachable, sustainable and, frankly, better than what we have now.Those same eyes also see the alternative future of climate disasters, social disarray and division, markets completely detached from reality and humanity enslaved by the machine.'),
+      p({ class: 'Big' }, 'There are only two possible endings to this scenario:'),
 
-    p(['There are only two possible endings to this scenario: ', b('Game Over or Replay.')]),
+      p({ class: 'Huge' }, 'GAME OVER'),
+    ]),
 
-    p('Our obligation as artists, technologists, scientists and other creatives is displaying those visions and making the needs for change obvious and ubiquitous.'),
-    p('By adding Imaginariums to reality we are not only enabled to connect people all over the world, we can facilitate the sharing of artistic work on an unlimited virtual version of earth.'),
-    p('It allows the visitor to partake in exhibitions all over the earth, and soon maybe even on other planets, while the artists are not being limited by choice of venue, budget or other real world problems negatively interfering with the display of art'),
+    div({ class: 'Replay SubSection' }, [
+      p({ class: 'Huge' }, 'REPLAY'),
 
-    h2('Participate'),
+      div({ class: 'left' }, [
+        p(
+          'Our obligation as artists, technologists, scientists and other creatives is displaying those visions and making the needs for change obvious and ubiquitous.',
+        ),
+        p(
+          'By adding Imaginariums to reality we are not only enabled to connect people all over the world, we can facilitate the sharing of artistic work on an unlimited virtual version of earth.',
+        ),
+        p(
+          'It allows the visitor to partake in exhibitions all over the earth, and soon maybe even on other planets, while the artists are not being limited by choice of venue, budget or other real world problems negatively interfering with the display of art',
+        ),
+      ]),
+
+      div({ class: 'Big right' }, 'This is our final chance to act.'),
+
+      Picture({ name: '/moon', extension: 'jpg' }),
+    ]),
+  ]),
+
+  section({ id: 'partners', class: 'Partners' }, [
+    h2('PARTNERS'),
+
+    [
+      { text: 'Barbis Ruder, AT', to: 'https://barbisruder.com/' },
+      { text: 'CZIRP CZIRP, AT', to: 'http://www.czirpczirp.cc/' },
+      { text: 'Echoræume, AT', to: 'https://echoraeume.klingt.org/' },
+      { text: 'Experimental Game Cultures, AT' },
+      {
+        text: 'FH St. Poelten, AT',
+        to: 'https://www.dieangewandte.at/jart/prj3/angewandte-2016/main.jart?rel=en&content-id=1621228720776',
+      },
+      { text: 'Hellerau, DE', to: 'https://www.hellerau.org/' },
+      { text: 'Klub Solitaer, DE', to: '' },
+      { text: 'Koli, TR' },
+      { text: 'Medienwerkstatt006, AT', to: 'https://www.medienwerkstatt006.at/' },
+      { text: 'PIXFILM Gallery, CA' },
+    ].map(partner => p(Link(partner))),
+    p('and more to come...'),
+  ]),
+
+  section({ id: 'participate', class: 'Participate' }, [
+    h2('PARTICIPATE'),
 
     p([
       'We are looking for institutional partners. ',
@@ -86,19 +161,168 @@ export const View = state => [
     ]),
 
     p([
-      'We can help with funding applications and handle the technical realisation of exhibitions,',
+      'We can help with material for the funding application and provide the technical infrastructure for exhibitions,',
       ' our partners handle the local open calls and coordinate with the artists.',
     ]),
-  ]),
 
-  div({ class: 'Participate' }, [
-    h2('How to participate'),
-
-    p('blabla'),
-    p('blabla'),
-    p('blabla'),
+    Link({ class: 'Button', text: 'CONTACT US', to: 'mailto:thesystemcollective@gmail.com' }),
   ]),
 
   Commissioned(),
-
 ]
+
+export const style = vars => ({
+  section: {
+    'p, div, h1, h2, h3, h4, h5': {
+      padding: '0 5vw',
+    },
+
+    '.SubSection': {
+      padding: 0,
+    },
+
+    h2: {
+      fontSize: '15px',
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+    },
+
+    '&.Mission': {
+      padding: 0,
+
+      '.GameOver': {
+        background: `linear-gradient(180deg, ${vars.background.dark} 60%, ${vars.gameoverColor} 99.5%, #6d9eac 100%)`,
+
+        '.light &&': {
+          background: `linear-gradient(180deg, ${vars.background.light} 60%, ${vars.gameoverColor} 99.5%, #6d9eac 100%)`,
+        },
+      },
+      '.Replay': {
+        background: `linear-gradient(180deg, #6d9eac 0%, ${vars.replayColor} 0.5%, ${vars.background.dark} 40%)`,
+
+        '.light &&': {
+          background: `linear-gradient(180deg, #6d9eac 0%, ${vars.replayColor} 0.5%, ${vars.background.light} 40%)`,
+        },
+      },
+    },
+  },
+
+  a: {
+    '&.Button': {
+      backgroundColor: vars.background.dark,
+      border: `2px solid ${vars.background.light}`,
+      color: vars.text.dark,
+      display: 'inline-block',
+      margin: '1em 0',
+      padding: '5px',
+      textDecoration: 'none',
+
+      '&:hover': {
+        backgroundColor: vars.background.dark,
+        color: vars.text.dark,
+      },
+    },
+  },
+
+  '.light &&': {
+    a: {
+      '&.Button': {
+        border: `2px solid ${vars.background.dark}`,
+        color: vars.text.light,
+        backgroundColor: vars.background.light,
+
+        '&:hover': {
+          color: vars.text.light,
+          backgroundColor: vars.background.light,
+        },
+      },
+    },
+  },
+
+
+
+  '.Big': {
+    fontSize: '2em',
+    margin: '1em 0',
+
+    '&.Left': {
+      float: 'left',
+      width: '45%',
+    },
+    '&.Right': {
+      float: 'right',
+      width: '45%',
+    },
+  },
+
+  '.Huge': {
+    fontSize: '14vw',
+    fontWeight: 'bold',
+    lineHeight: 1.2,
+    textAlign: 'center',
+  },
+
+  '.Partners': {
+    color: vars.replayColor,
+    margin: '2em 0',
+    padding: '5em 0',
+
+    a: {
+      color: vars.replayColor,
+      fontSize: '1.5em',
+      lineHeight: '1.4em',
+      whiteSpace: 'normal',
+    },
+
+    background: `
+      linear-gradient(0deg,
+        ${vars.background.dark} 0%,
+        ${vars.gameoverColor} 40%,
+        ${vars.gameoverColor} 60%,
+        ${vars.background.dark} 100%
+      )`,
+
+    '.light &&': {
+      background: `
+      linear-gradient(0deg,
+        ${vars.background.light} 0%,
+        ${vars.gameoverColor} 40%,
+        ${vars.gameoverColor} 60%,
+        ${vars.background.light} 100%
+      )`,
+    },
+  },
+
+
+  '.MapArea': {
+    display: 'inline-block',
+  },
+  '.MapImage': {
+    height: 'auto',
+    width: '100%',
+  },
+  '.ArtifactImage1': {
+    float: 'right',
+    height: 'auto',
+    position: 'relative',
+    top: '-10vw',
+    width: '30%',
+  },
+  '.ArtifactImage2': {
+    float: 'left',
+    height: 'auto',
+    position: 'relative',
+    top: '-5vw',
+    width: '55%',
+  },
+
+  [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+    'section.Mission': {
+      '.GameOver, .Replay': {
+        '.Huge': {
+          fontSize: '4.5em',
+        },
+      },
+    },
+  },
+})

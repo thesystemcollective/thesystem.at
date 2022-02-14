@@ -1,11 +1,12 @@
 export const View = (props = {}) => {
   CHECK_PROPS(props, propTypes, 'Picture')
 
-  const {
-    name,
-    extension = 'jpg',
-    sources = ['webp'],
-    ...args } = props
+  const { name, extension = 'jpg', sources = ['webp'], ...args } = props
+
+  if (!args.alt) {
+    args.role = 'presentation'
+    args.alt = ''
+  }
 
   return picture({ class: 'Picture' }, [
     ...sources.map(ext =>
@@ -16,12 +17,8 @@ export const View = (props = {}) => {
     ),
 
     img({
-      class: args.class,
-      width: args.width,
-      height: args.height,
-      loading: "lazy",
-      alt: args.alt ? i18n(args.alt) : "",
-      role: "presentation",
+      ...args,
+      loading: 'lazy',
       src: lib.replaceSlashSlash(`${name}.${extension}`),
     }),
   ])

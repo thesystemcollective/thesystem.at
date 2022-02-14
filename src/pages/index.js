@@ -12,17 +12,17 @@ export const View = state => [
   ]),
 
   div({ class: 'MapArea' }, [
-    Picture({ class: 'MapImage', name: '/map', extension: 'jpg', height: 434, width: 900 }),
+    Picture({ class: 'MapImage', name: 'map', extension: 'jpg', height: 434, width: 900 }),
     Picture({
       class: 'ArtifactImage1',
-      name: '/art_01',
+      name: 'art_01',
       extension: 'jpg',
       height: 800,
       width: 600,
     }),
     Picture({
       class: 'ArtifactImage2',
-      name: '/art_02',
+      name: 'art_02',
       extension: 'jpg',
       height: 600,
       width: 800,
@@ -129,7 +129,7 @@ export const View = state => [
 
       div({ class: 'Big right' }, 'This is our final chance to act.'),
 
-      Picture({ class: 'Moon', name: '/moon', extension: 'jpg' }),
+      Picture({ class: 'Moon', name: 'moon', extension: 'jpg' }),
     ]),
   ]),
 

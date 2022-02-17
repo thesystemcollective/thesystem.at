@@ -1,28 +1,28 @@
 export const vars = {
   text: {
-    dark: '#f0f0f0',
-    light: '#0f0f0f',
+    dark: '#fafafa',
+    light: '#0c0c0c',
   },
 
   background: {
-    dark: '#0f0f0f',
-    light: '#f0f0f0',
+    dark: '#0c0c0c',
+    light: '#fafafa',
   },
 
-  gameoverColor: '#f13f4b',
-  replayColor: '#05e1f1',
+  gameoverColor: '#f03f4b',
+  replayColor: '#06e3f3',
 
-  neutral: '#0f0f0f',
+  neutral: '#0c0c0c',
 
   paddingLeft: '25px',
 
   link: {
-    dark: '#f0f0f0',
-    light: '#0f0f0f',
+    dark: '#fafafa',
+    light: '#0c0c0c',
 
     hover: {
-      dark: '#f0f0f0',
-      light: '#0f0f0f',
+      dark: '#fafafa',
+      light: '#0c0c0c',
     },
   },
 
@@ -63,8 +63,36 @@ export default (v = {}) => {
     a: {
       color: v.link.dark,
 
+      '&.Button': {
+        backgroundColor: v.background.dark,
+        border: `2px solid ${v.background.light}`,
+        display: 'inline-block',
+        margin: '1em 0',
+        padding: '0.5em 0',
+        textAlign: 'center',
+        width: '90%',
+        textDecoration: 'none',
+        fontWeight: 'bold',
+        letterSpacing: '1px',
+
+        '&:hover': {
+          backgroundColor: v.background.dark,
+        },
+      },
+
       '.light &&': {
         color: v.link.light,
+
+        '&.Button': {
+          border: `2px solid ${v.background.dark}`,
+          color: v.text.light,
+          backgroundColor: v.background.light,
+
+          '&:hover': {
+            color: v.text.light,
+            backgroundColor: v.background.light,
+          },
+        },
 
         '&:hover': {
           color: v.link.hover.light,
@@ -81,8 +109,12 @@ export default (v = {}) => {
       maxHeight: '100%',
     },
 
-    'h2, h3': {
-      fontWeight: 500,
+    h2: {
+      fontSize: '15px',
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+      margin: '0 auto 2em',
+      letterSpacing: '1px',
     },
 
     '#Magic': {
@@ -186,14 +218,173 @@ export default (v = {}) => {
       },
     },
 
+    section: {
+      clear: 'both',
+      margin: '2em 0',
+
+      '.Container': {
+        margin: '0 auto',
+        maxWidth: '1300px',
+        padding: '0 5vw',
+      },
+
+      '.SubSection': {
+        margin: 0,
+        maxWidth: 'inherit',
+        padding: 0,
+
+        '> h2': {
+          margin: '0 auto 2em',
+        },
+      },
+
+      '&.Mission': {
+        padding: 0,
+
+        '.GameOver': {
+          background: `linear-gradient(180deg, ${v.background.dark} 0%, ${v.gameoverColor} 99%, #7e909e 100%)`,
+
+          '.light &&': {
+            background: `linear-gradient(180deg, ${v.background.light} 0%, ${v.gameoverColor} 99%, #7e909e 100%)`,
+          },
+        },
+        '.Replay': {
+          background: `linear-gradient(180deg, #7e909e 0%, ${v.replayColor} 1%, ${v.background.dark} 50%)`,
+
+          '.light &&': {
+            background: `linear-gradient(180deg, #7e909e 0%, ${v.replayColor} 1%, ${v.background.light} 50%)`,
+          },
+        },
+      },
+    },
+
+    '.MoonBase': {
+      display: 'inline-block',
+      position: 'relative',
+    },
+
+    '.Picture.Moon': {
+      img: {
+        display: 'block',
+        margin: '0 auto',
+      },
+    },
+
+    '.Spacer': {
+      fontSize: '18px',
+      margin: '3.7em 0 0',
+    },
+
+    '.Medium': {
+      fontSize: '24px',
+    },
+
+    '.Big': {
+      display: 'inline-block',
+      fontSize: '2em',
+      margin: '1em auto',
+      lineHeight: 1,
+    },
+
+    '.Huge': {
+      fontSize: '14vw',
+      fontWeight: 'bold',
+      lineHeight: 1.2,
+      textAlign: 'center',
+    },
+
+    '.GameOver': {
+      '.Huge': {
+        padding: '0 0 10px',
+      },
+    },
+
+    '.Partners': {
+      color: v.replayColor,
+      margin: '2em 0',
+      padding: '5em 0',
+
+      li: {
+        color: v.replayColor,
+        fontSize: '1.2em',
+        lineHeight: '1.4em',
+        whiteSpace: 'normal',
+
+        a: {
+          color: v.replayColor,
+        },
+      },
+
+      background: `
+      linear-gradient(0deg,
+        ${v.background.dark} 0%,
+        ${v.gameoverColor} 40%,
+        ${v.gameoverColor} 60%,
+        ${v.background.dark} 100%
+      )`,
+
+      '.light &&': {
+        background: `
+      linear-gradient(0deg,
+        ${v.background.light} 0%,
+        ${v.gameoverColor} 40%,
+        ${v.gameoverColor} 60%,
+        ${v.background.light} 100%
+      )`,
+      },
+    },
+
+    '.MapArea': {
+      display: 'inline-block',
+      width: '100%',
+    },
+
+    '.MapImage': {
+      height: 'auto',
+      width: '100%',
+
+      img: {
+        height: 'auto',
+        width: '100%',
+        maxWidth: '1300px',
+        margin: '0 auto',
+        display: 'block',
+      },
+    },
+    '.ArtifactImage1': {
+      float: 'right',
+      height: 'auto',
+      position: 'relative',
+      top: '-17vw',
+      width: '33%',
+
+      img: {
+        height: '100%',
+        width: '100%',
+      },
+    },
+    '.ArtifactImage2': {
+      float: 'left',
+      height: 'auto',
+      position: 'relative',
+      top: '-5vw',
+      width: '55%',
+
+      img: {
+        height: '100%',
+        width: '100%',
+      },
+    },
+
     [`@media screen and (min-width: ${v.widths.tablet})`]: {
       body: {
         fontSize: '22px',
       },
 
-      '.Menu': {
-        li: {
-          float: 'none',
+      a: {
+        '&.Button': {
+          padding: '0.5em 3.2em',
+          width: 'auto',
         },
       },
 
@@ -208,6 +399,32 @@ export default (v = {}) => {
           marginTop: 0,
         },
       },
+
+      '.Spacer': {
+        width: '70vw',
+      },
+
+      '.Medium': {
+        width: '75vw',
+      },
+
+      '.Big.Narrow': {
+        width: '70vw',
+      },
+
+      '.Left': {
+        float: 'left',
+      },
+      '.Right': {
+        float: 'right',
+        textAlign: 'right',
+      },
+
+      '.Partners': {
+        li: {
+          fontSize: '2em',
+        },
+      },
     },
 
     [`@media screen and (min-width: ${v.widths.laptop})`]: {
@@ -220,9 +437,39 @@ export default (v = {}) => {
         },
       },
 
+      '.Spacer': {
+        width: '40vw',
+      },
+
+      '.Medium': {
+        width: '45vw',
+      },
+
+      '.Big': {
+        width: '55vw',
+
+        '&.Narrow': {
+          width: '40vw',
+        },
+      },
+
       '.content': {
         width: '70vw',
         margin: '0 auto 6em',
+      },
+
+      '.Mission': {
+        '.GameOver, .Replay': {
+          '.Huge': {
+            fontSize: '4.5em',
+          },
+        },
+      },
+
+      '.Partners': {
+        li: {
+          fontSize: '2.5em',
+        },
       },
     },
 
@@ -231,6 +478,19 @@ export default (v = {}) => {
         section: {
           margin: '0 2em 0 0',
           width: 'auto',
+        },
+      },
+      '.Big': {
+        width: '45vw'
+      },
+    },
+
+    [`@media screen and (min-width: ${v.widths.agency})`]: {
+      'section.Mission': {
+        '.GameOver, .Replay': {
+          '.Huge': {
+            fontSize: '8em',
+          },
         },
       },
     },

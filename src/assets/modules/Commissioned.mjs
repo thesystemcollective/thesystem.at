@@ -1,6 +1,6 @@
 export const View = () =>
-  section({ class: 'Commissioned' }, [
-    h3('Commissioned by:'),
+  Section({ class: 'Commissioned' }, [
+    h2('Commissioned by:'),
 
     div([
       Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
@@ -21,15 +21,19 @@ export const View = () =>
       ]),
 
       Link({ to: 'https://wirtschaftsagentur.at', title: 'Wirtschaftsagentur Wien' }, [
-        Img({ src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png', height: 100, width: 100 }),
+        Img({
+          src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png',
+          height: 100,
+          width: 100,
+        }),
       ]),
 
-      Img({
-        src: 'https://static.artificialmuseum.com/support/petmanfoundation.png',
-        title: 'Petman Foundation',
-        height: 100,
-        width: 100,
-      }),
+      // Img({
+      //   src: 'https://static.artificialmuseum.com/support/petmanfoundation.png',
+      //   title: 'Petman Foundation',
+      //   height: 100,
+      //   width: 100,
+      // }),
     ]),
   ])
 
@@ -63,8 +67,8 @@ export const style = vars => ({
 
   img: {
     height: 'auto',
-    margin: '0 2em 0 0',
-    maxWidth: '90vw',
+    margin: '0 5vw 0 0',
+    maxWidth: '80vw',
   },
 
   '.koer': {

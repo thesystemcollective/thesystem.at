@@ -481,7 +481,7 @@ export default (v = {}) => {
         },
       },
       '.Big': {
-        width: '45vw'
+        width: '45vw',
       },
     },
 

@@ -5,15 +5,15 @@ export const View = props => {
 
   return div({ class: 'Header' }, [
     div({ class: 'Branding' }, [
-    div(
-      { class: 'Logo' },
-      svg({ class: 'logo', viewBox: '0 0 54 60', width: '60', height: '54' }, [
-        path({ d: 'M0 0v60h18V50H9V10h9V0z', fill: '#ffffff' }),
-        path({ d: 'M36 0v10h9v40h-9v10h18V0z', fill: '#ffffff' }),
-      ]),
-    ),
+      div(
+        { class: 'Logo' },
+        svg({ class: 'logo', viewBox: '0 0 54 60', width: '60', height: '54' }, [
+          path({ d: 'M0 0v60h18V50H9V10h9V0z', fill: '#ffffff' }),
+          path({ d: 'M36 0v10h9v40h-9v10h18V0z', fill: '#ffffff' }),
+        ]),
+      ),
 
-    div({ class: 'Slogan' }, [p(b('hello world')), p('we are the SystemKollektiv')]),
+      div({ class: 'Slogan' }, [p(b('hello world')), p('we are the SystemKollektiv')]),
     ]),
 
     menu && Menu({ url, hash, menu }),

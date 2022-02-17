@@ -152,21 +152,23 @@ export const View = state => [
   Section({ id: 'partners', class: 'Partners' }, [
     h2('PARTNERS'),
 
-    ul([
-      { text: 'Barbis Ruder, AT', to: 'https://barbisruder.com/' },
-      { text: 'CZIRP CZIRP, AT', to: 'http://www.czirpczirp.cc/' },
-      { text: 'Echoræume, AT', to: 'https://echoraeume.klingt.org/' },
-      { text: 'Experimental Game Cultures, AT' },
-      {
-        text: 'FH St. Poelten, AT',
-        to: 'https://www.dieangewandte.at/jart/prj3/angewandte-2016/main.jart?rel=en&content-id=1621228720776',
-      },
-      { text: 'Hellerau, DE', to: 'https://www.hellerau.org/' },
-      { text: 'Klub Solitaer, DE', to: 'https://www.klub-solitaer.de/' },
-      { text: 'Koli, TR' },
-      { text: 'Medienwerkstatt006, AT', to: 'https://www.medienwerkstatt006.at/' },
-      { text: 'PIXFILM Collective, CA', to: 'https://www.pixfilmcollective.com/' },
-    ].map(partner => partner.to ? li(Link(partner)) : li(partner.text))),
+    ul(
+      [
+        { text: 'Barbis Ruder, AT', to: 'https://barbisruder.com/' },
+        { text: 'CZIRP CZIRP, AT', to: 'http://www.czirpczirp.cc/' },
+        { text: 'Echoræume, AT', to: 'https://echoraeume.klingt.org/' },
+        { text: 'Experimental Game Cultures, AT' },
+        {
+          text: 'FH St. Poelten, AT',
+          to: 'https://www.dieangewandte.at/jart/prj3/angewandte-2016/main.jart?rel=en&content-id=1621228720776',
+        },
+        { text: 'Hellerau, DE', to: 'https://www.hellerau.org/' },
+        { text: 'Klub Solitaer, DE', to: 'https://www.klub-solitaer.de/' },
+        { text: 'Koli, TR' },
+        { text: 'Medienwerkstatt006, AT', to: 'https://www.medienwerkstatt006.at/' },
+        { text: 'PIXFILM Collective, CA', to: 'https://www.pixfilmcollective.com/' },
+      ].map(partner => (partner.to ? li(Link(partner)) : li(partner.text))),
+    ),
     p('and more to come...'),
   ]),
 

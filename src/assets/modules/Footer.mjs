@@ -19,8 +19,8 @@ export const View = state =>
       ]),
 
       h3('Represented by:'),
-      p('Litto / Daniela Weiss'),
-      p('Jascha Ehrenreich'),
+      p(Link({ to: 'https://litto.work', text: 'Litto / Daniela Weiss' })),
+      p(Link({ to: 'https://jaeh.at', text: 'Jascha Ehrenreich' })),
 
       h3('Email:'),
       Link({
@@ -80,9 +80,14 @@ export const style = v => ({
   margin: '2em 0 0',
   padding: `5em 0 .5em ${v.paddingLeft}`,
   position: 'relative',
+  fontSize: '0.8em',
 
   h2: {
     padding: '0 0 0.2em',
+  },
+
+  h3: {
+    fontSize: '1em',
   },
 
   '#Magic &&': {

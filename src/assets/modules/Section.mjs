@@ -1,14 +1,14 @@
 export const View = (p, children) => {
-  const props = {
-    class: 'Section',
-  }
+  const { class: cl, ...props } = p
 
-  if (p.class) {
-    if (!p.class.includes('Section')) {
-      props.class += ` ${p.class}`
+  if (cl) {
+    if (!cl.includes('Section')) {
+      props.class += ` ${cl}`
     } else {
-      props.class = `Section ${p.class}`
+      props.class = `Section ${cl}`
     }
+  } else {
+    props.class = 'Section'
   }
 
   return section(props, div({ class: 'Container' }, children))

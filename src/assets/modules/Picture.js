@@ -1,15 +1,15 @@
 export const View = (props = {}) => {
   CHECK_PROPS(props, propTypes, 'Picture')
 
-  const { name, extension = 'jpg', sources = ['webp'], class: cl, ...args } = props
+  const { name, extension = 'jpg', sources = ['webp'], class: cl, ...imgProps } = props
 
-  if (!args.alt) {
-    args.role = 'presentation'
-    args.alt = ''
+  if (!imgProps.alt) {
+    imgProps.role = 'presentation'
+    imgProps.alt = ''
   }
 
   const p = {
-    class: 'Picture'
+    class: 'Picture',
   }
 
   if (cl) {
@@ -29,11 +29,22 @@ export const View = (props = {}) => {
     ),
 
     img({
-      ...args,
       loading: 'lazy',
+      ...imgProps,
       src: lib.replaceSlashSlash(`${name}.${extension}`),
     }),
   ])
+}
+
+export const style = {
+  '.Picture': {
+    img: {
+      height: 'auto',
+      maxHeight: '100%',
+      maxWidth: '100%',
+      width: 'auto',
+    },
+  },
 }
 
 export const propTypes = {

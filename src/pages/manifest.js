@@ -1,3 +1,1 @@
-export const View = () => [
-  h2('MANIFEST'),
-]
+export const View = () => [h2('MANIFEST')]

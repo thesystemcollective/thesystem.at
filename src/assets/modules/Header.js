@@ -55,6 +55,14 @@ export const style = vars => ({
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
+    position: 'sticky',
+    top: 0,
+    backgroundColor: vars.background.dark,
+
+    '.light &&': {
+      backgroundColor: vars.background.light,
+    },
+
     '.Branding': {
       float: 'left',
     },

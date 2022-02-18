@@ -293,6 +293,10 @@ export default (v = {}) => {
       textAlign: 'center',
     },
 
+    '.Right': {
+      textAlign: 'right',
+    },
+
     '.GameOver': {
       '.Huge': {
         padding: '0 0 10px',
@@ -417,7 +421,6 @@ export default (v = {}) => {
       },
       '.Right': {
         float: 'right',
-        textAlign: 'right',
       },
 
       '.Partners': {

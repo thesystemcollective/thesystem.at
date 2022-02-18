@@ -187,7 +187,7 @@ export const View = state => [
       p([
         'We can help with the local funding application and provide the technical infrastructure for exhibitions,',
         ' our partners handle the open calls and coordinate with the artists.',
-        ' 95% of our funding applications in 2021 were successful.',
+        // ' 95% of our collaborative funding applications in 2021 were successful.',
       ]),
     ]),
 

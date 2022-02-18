@@ -29,7 +29,6 @@ export const View = (props, children) => {
 }
 
 export const style = vars => ({
-  '.Countdown': {
     position: 'absolute',
     top: 0,
     height: '100%',
@@ -63,28 +62,21 @@ export const style = vars => ({
     },
     '.Day': {
       margin: '0 2% 0 0',
-    },
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
-    '.Countdown': {
-      fontSize: '1.3em',
+    fontSize: '1.3em',
 
-      '.Day, .Hour': {
-        display: 'inline',
-      },
+    '.Day, .Hour': {
+      display: 'inline',
     },
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
-    '.Countdown': {
-      fontSize: '1.5em',
-    },
+    fontSize: '1.5em',
   },
   [`@media screen and (min-width: ${vars.widths.desktop})`]: {
-    '.Countdown': {
-      fontSize: '3em',
-    },
+    fontSize: '3em',
   },
 })
 

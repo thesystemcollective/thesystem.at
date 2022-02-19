@@ -267,6 +267,8 @@ export default (v = {}) => {
 
       h1: {
         fontSize: '11.5vw',
+        padding: 0,
+        lineHeight: 1,
       },
     },
 

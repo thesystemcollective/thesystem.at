@@ -6,14 +6,14 @@ export const View = () =>
       Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
         Img({
           class: 'koer',
-          alt: 'kör',
+          alt: 'KÖR Wien',
           src: 'https://static.artificialmuseum.com/support/koer.svg',
           width: 255,
           height: 100,
         }),
         Img({
           class: 'koer',
-          alt: 'wien kultur',
+          alt: 'Wien Kultur',
           src: 'https://static.artificialmuseum.com/support/wien-kultur.svg',
           width: 242,
           height: 100,
@@ -22,6 +22,7 @@ export const View = () =>
 
       Link({ to: 'https://wirtschaftsagentur.at', title: 'Wirtschaftsagentur Wien' }, [
         Img({
+          alt: 'Wirtschaftsagentur Wien',
           src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png',
           height: 100,
           width: 100,

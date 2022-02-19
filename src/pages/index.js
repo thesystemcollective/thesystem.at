@@ -185,7 +185,7 @@ export const View = state => [
       ]),
 
       p([
-        'We provide the technical infrastructure for exhibitions,',
+        'We provide the technical infrastructure for artifacts and exhibitions,',
         ' our partners handle the open calls and coordinate with the artists.',
         // ' 95% of our collaborative funding applications in 2021 were successful.',
       ]),

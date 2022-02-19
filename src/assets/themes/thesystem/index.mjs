@@ -258,6 +258,18 @@ export default (v = {}) => {
       },
     },
 
+    '.Hero': {
+      '.HeroLogo': {
+        maxWidth: '400px',
+        margin: '0 auto',
+        display: 'block',
+      },
+
+      h1: {
+        fontSize: '11.5vw',
+      },
+    },
+
     '.MoonBase': {
       display: 'inline-block',
       position: 'relative',
@@ -390,6 +402,17 @@ export default (v = {}) => {
         '&.Button': {
           padding: '0.5em 3.2em',
           width: 'auto',
+        },
+      },
+
+      '.Hero': {
+        '.HeroLogo': {
+          float: 'left',
+          margin: '0 2em 0 0',
+        },
+        h1: {
+          fontSize: '50px',
+          float: 'left',
         },
       },
 

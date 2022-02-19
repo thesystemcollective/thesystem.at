@@ -261,6 +261,7 @@ export default (v = {}) => {
     '.MoonBase': {
       display: 'inline-block',
       position: 'relative',
+      zIndex: 2,
     },
 
     '.Picture.Moon': {

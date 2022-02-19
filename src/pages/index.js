@@ -1,7 +1,7 @@
 export const View = state => [
   Section({ class: 'Hero' }, [
     div([
-      img({ class: 'HeroLogo', src: 'hero-logo.svg', height: 400, width: 400 }),
+      img({ class: 'HeroLogo', src: '/hero-logo.svg', height: 400, width: 400 }),
       h1('SystemKollektiv'),
     ]),
 

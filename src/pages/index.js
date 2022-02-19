@@ -1,7 +1,9 @@
 export const View = state => [
   Section({ class: 'Hero' }, [
-    // p(b('Hello World.')),
-    // p('We are the SystemKollektiv'),
+    div([
+      img({ class: 'HeroLogo', src: 'hero-logo.svg', height: 400, width: 400 }),
+      h1('SystemKollektiv'),
+    ]),
 
     p({ class: 'Branding Big' }, [
       'Our mission is to create, procure, research, distribute,',

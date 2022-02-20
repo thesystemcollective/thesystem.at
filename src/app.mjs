@@ -1,6 +1,6 @@
 export const state = {
-  title: 'THESYSTEM',
-  description: 'THESYSTEM - August – Oktober 2020 - Yppenplatz 5, 1160 Wien',
+  title: 'SystemKollektiv',
+  description: 'SystemKollektiv - Our mission is to create, procure, research, distribute, and preserve digitized art in the Artificial Museum.',
   image: 'https://thesystem.at/thesystem_preview_image.jpg',
 
   theme: 'dark',

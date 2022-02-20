@@ -11,15 +11,28 @@ export const View = props => {
         div({ class: 'Slogan' }, [p(b('hello world')), p('we are the SystemKollektiv')]),
       ]),
 
-      menu && Menu({ url, hash, menu }),
+      div({ class: 'Hamburger', onclick: actions.header?.toggle }, '[ ]'),
+      menu && Menu({ class: props.menuVisible ? 'visible' : 'no', url, hash, menu }),
     ]),
   ])
+}
+
+export const actions = {
+  toggle: state => {
+    return {
+      ...state,
+      menuVisible: !state.menuVisible,
+    }
+  }
 }
 
 export const style = vars => ({
   width: '100%',
   zIndex: 1,
   fontSize: '15px',
+  position: 'sticky',
+  top: 0,
+  backgroundColor: vars.background.dark,
 
   '.Container': {
     maxWidth: '1300px',
@@ -31,10 +44,15 @@ export const style = vars => ({
     display: 'inline-block',
   },
 
+  '.Hamburger': {
+    float: 'right',
+    cursor: 'pointer',
+  },
+
   '.Logo': {
     float: 'left',
     height: '2.5vw',
-    margin: '0 1vw 0 1.5vw',
+    margin: '0 2vw',
     width: 'auto',
     minHeight: '2em',
   },
@@ -51,9 +69,25 @@ export const style = vars => ({
     float: 'none',
     textAlign: 'center',
     margin: '0.5em 0 0 5vw',
+
+    '&.visible': {
+      display: 'inherit',
+    },
+
+    '&.no': {
+      display: 'none',
+    },
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+    '.Hamburger': {
+      display: 'none',
+    },
+    '.Menu': {
+      '&.no': {
+        display: 'inherit',
+      },
+    },
     '.Branding': {
       float: 'left',
     },
@@ -63,9 +97,6 @@ export const style = vars => ({
   },
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
-    position: 'sticky',
-    top: 0,
-    backgroundColor: vars.background.dark,
     padding: '0.5em 0',
 
     '.light &&': {

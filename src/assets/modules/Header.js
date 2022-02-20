@@ -34,6 +34,7 @@ export const style = vars => ({
   position: 'sticky',
   top: 0,
   backgroundColor: vars.background.dark,
+  padding: '1vw 0 0.5vw',
 
   '.Container': {
     maxWidth: '1300px',
@@ -93,6 +94,7 @@ export const style = vars => ({
 
     '.Menu': {
       float: 'right',
+      margin: '0.5em 0 0 5vw',
 
       '&.no': {
         display: 'inherit',

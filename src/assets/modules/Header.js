@@ -71,7 +71,7 @@ export const style = vars => ({
   '.Menu': {
     float: 'none',
     textAlign: 'center',
-    margin: '0.5em 0 0 5vw',
+    margin: '1em 0 1em 5vw',
 
     '&.visible': {
       display: 'inherit',

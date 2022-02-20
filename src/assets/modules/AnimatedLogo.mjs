@@ -7,13 +7,9 @@ export const View = (state) => {
 
 export const actions = {
   animateLogo: state => {
-    console.log('animate Logo')
-
     lib.animatedLogo()
 
-    state.clicked = true
-
-    return { ...state }
+    return state
   }
 }
 

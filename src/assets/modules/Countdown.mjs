@@ -29,43 +29,47 @@ export const View = (props, children) => {
 }
 
 export const style = vars => ({
-    position: 'absolute',
-    top: 0,
-    height: '100%',
-    width: '100%',
+  position: 'absolute',
+  top: 0,
+  height: '100%',
+  width: '100%',
 
-    h2: {
-      margin: 0,
-      padding: 0,
-    },
+  h2: {
+    margin: 0,
+    padding: 0,
+  },
 
-    '.Placeholder': {
-      textAlign: 'center',
-      top: '37%',
-      position: 'relative',
-      margin: '0 auto',
-    },
+  '.Placeholder': {
+    textAlign: 'center',
+    top: '28%',
+    position: 'relative',
+    margin: '0 auto',
+  },
 
-    '.Background': {
-      background: `${vars.background.dark}80`,
-      borderRadius: '1em',
-      textAlign: 'center',
-      padding: '0.5em',
-      fontSize: '1.5em',
-      display: 'inline-block',
-    },
+  '.Background': {
+    background: `${vars.background.dark}80`,
+    borderRadius: '1em',
+    textAlign: 'center',
+    padding: '0.5em',
+    fontSize: '1.5em',
+    display: 'inline-block',
+  },
 
-    '.Day, .Hour': {
-      fontWeight: 'bold',
-      color: vars.replayColor,
-      whiteSpace: 'nowrap',
-    },
-    '.Day': {
-      margin: '0 2% 0 0',
+  '.Day, .Hour': {
+    fontWeight: 'bold',
+    color: vars.replayColor,
+    whiteSpace: 'nowrap',
+  },
+  '.Day': {
+    margin: '0 2% 0 0',
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
     fontSize: '1.3em',
+
+    '.Placeholder': {
+      top: '35%',
+    },
 
     '.Day, .Hour': {
       display: 'inline',
@@ -74,6 +78,10 @@ export const style = vars => ({
 
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
     fontSize: '1.5em',
+
+    '.Placeholder': {
+      top: '37%',
+    },
   },
   [`@media screen and (min-width: ${vars.widths.desktop})`]: {
     fontSize: '3em',

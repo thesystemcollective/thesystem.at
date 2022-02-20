@@ -78,7 +78,7 @@ export const style = v => ({
   clear: 'both',
   color: v.text.dark,
   margin: '2em 0 0',
-  padding: `5em 0 .5em ${v.paddingLeft}`,
+  padding: '5em 0 .5em',
   position: 'relative',
   fontSize: '0.8em',
 

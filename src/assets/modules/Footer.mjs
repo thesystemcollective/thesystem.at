@@ -34,9 +34,6 @@ export const View = state =>
         Link(
           {
             to: 'https://www.instagram.com/theartificialmuseum/',
-            nofollow: true,
-            noreferrer: true,
-            noopener: true,
           },
           [
             svg({ viewBox: '0 0 512 512', height: '45' }, [
@@ -55,9 +52,6 @@ export const View = state =>
         Link(
           {
             to: 'https://www.youtube.com/channel/UCBwKwgk_eU8w-ccmTOFXADQ',
-            nofollow: true,
-            noeferrer: true,
-            noopener: true,
           },
           [
             svg({ class: 'youtube', viewBox: '0 0 156 109', height: '30' }, [
@@ -69,6 +63,10 @@ export const View = state =>
             ]),
           ],
         ),
+
+        Link({ to: "https://twitter.com/artificialmuseu" }, svg({ class: "twitter", height: 30, viewBox: "0 0 121 100" }, [
+          path({ fill: "#fff", d: "M108.06 25.18c.07 1.06.07 2.12.07 3.2 0 32.76-24.73 70.53-69.95 70.53v-.02A69.15 69.15 0 0 1 .48 87.78a49.64 49.64 0 0 0 5.86.36A49.14 49.14 0 0 0 36.88 77.5 24.64 24.64 0 0 1 13.9 60.3c3.68.72 7.48.57 11.1-.43a24.75 24.75 0 0 1-19.73-24.3v-.31a24.25 24.25 0 0 0 11.16 3.1 24.94 24.94 0 0 1-7.6-33.1 69.6 69.6 0 0 0 50.66 25.9 24.93 24.93 0 0 1 7.12-23.68 24.47 24.47 0 0 1 34.78 1.08 49.07 49.07 0 0 0 15.62-6.02 24.82 24.82 0 0 1-10.81 13.7 48.58 48.58 0 0 0 14.12-3.9 50.22 50.22 0 0 1-12.27 12.85Zm0 0" }),
+        ])),
       ]),
       // Credits(),
     ]),
@@ -140,8 +138,10 @@ export const style = v => ({
       margin: '0 20px 0 0',
     },
 
-    'svg.youtube': {
-      margin: '0 0 8px 0',
+    svg: {
+      '&.youtube, &.twitter': {
+        margin: '0 0 8px 0',
+      },
     },
   },
 

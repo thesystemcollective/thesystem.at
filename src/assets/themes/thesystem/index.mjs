@@ -258,17 +258,27 @@ export default (v = {}) => {
       },
     },
 
+    figcaption: {
+      fontSize: '0.5em',
+    },
+
     '.Hero': {
+      '.Container': {
+        display: 'inline-block',
+      },
+
       '.HeroLogo': {
-        maxWidth: '400px',
-        margin: '0 auto',
+        maxWidth: '100%',
+        width: '250px',
+        height: 'auto',
+        margin: '0 auto 1em',
         display: 'block',
       },
 
       h1: {
-        fontSize: '11.5vw',
         padding: 0,
         lineHeight: 1,
+        fontSize: '11.5vw',
       },
     },
 
@@ -411,10 +421,15 @@ export default (v = {}) => {
         '.HeroLogo': {
           float: 'left',
           margin: '0 2em 0 0',
+          width: '200px',
         },
+
+        '.HeroBranding': {
+          float: 'left',
+        },
+
         h1: {
           fontSize: '50px',
-          float: 'left',
         },
       },
 

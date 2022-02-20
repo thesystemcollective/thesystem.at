@@ -81,7 +81,7 @@ export const style = vars => ({
       display: 'inherit',
     },
     img: {
-      margin: '0 5vw 0',
+      margin: '0 5vw 0 0',
     },
   },
 })

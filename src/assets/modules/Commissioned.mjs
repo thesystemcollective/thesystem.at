@@ -68,7 +68,7 @@ export const style = vars => ({
 
   img: {
     height: 'auto',
-    margin: '0 5vw 0 0',
+    margin: '0 5vw 1.3em 0',
     maxWidth: '80vw',
   },
 
@@ -79,6 +79,9 @@ export const style = vars => ({
   [`@media screen and (min-width: ${vars.widths.laptop})`]: {
     '.koer': {
       display: 'inherit',
+    },
+    img: {
+      margin: '0 5vw 0',
     },
   },
 })

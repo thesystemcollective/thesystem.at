@@ -1,6 +1,6 @@
 export const View = state => [
   Section({ class: 'Hero' }, [
-    img({ class: 'HeroLogo', src: '/hero-logo.svg', height: 400, width: 400 }),
+    AnimatedLogo(state),
 
     h1([span('System'), span('Kollektiv')]),
 

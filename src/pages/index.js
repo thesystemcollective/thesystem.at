@@ -1,34 +1,50 @@
 export const View = state => [
   Section({ class: 'Hero' }, [
-    div([
-      img({ class: 'HeroLogo', src: '/hero-logo.svg', height: 400, width: 400 }),
+    img({ class: 'HeroLogo', src: '/hero-logo.svg', height: 400, width: 400 }),
+
+    div({ class: 'HeroBranding' }, [
       h1('SystemKollektiv'),
-    ]),
 
-    p({ class: 'Branding Big' }, [
-      'Our mission is to create, procure, research, distribute,',
-      ' and preserve digitized art in the Artificial Museum.',
-    ]),
+      p({ class: 'Branding Big' }, [
+        'Our mission is to create, procure, research, distribute,',
+        ' and preserve digitized art in the Artificial Museum.',
+      ]),
 
-    div(Link({ class: 'Button', to: 'https://artificialmuseum.com', text: 'VISIT OUR MUSEUM' })),
+      Link({ class: 'Button', to: 'https://artificialmuseum.com', text: 'VISIT OUR MUSEUM' }),
+    ]),
   ]),
 
   div({ class: 'MapArea' }, [
     Picture({ class: 'MapImage', name: 'map', extension: 'jpg', height: 434, width: 900 }),
-    Picture({
+    figure({
       class: 'ArtifactImage1',
+    }, [
+      Picture({
       name: 'art_01',
       extension: 'jpg',
       height: 800,
       width: 600,
     }),
-    Picture({
+      figcaption([
+        p('Winston Hacking:'),
+        Link({ to: 'https://artificialmuseum.com/toronto/#z=16&lat=43.67059&lng=-79.43862&s=list&d=ecstaticcling&p=ecstaticcling' }, p('Ecstatic Cling'))
+      ]),
+    ]),
+
+    figure({
       class: 'ArtifactImage2',
+    }, [
+      Picture({
       name: 'art_02',
       extension: 'jpg',
       height: 600,
       width: 800,
     }),
+      figcaption([
+        p('Ilkhan Selcuk Ergodan:'),
+        Link({ to: 'https://artificialmuseum.com/vienna/#z=17&lat=48.19955&lng=16.36837&s=list&d=digitalheartbeat&p=digitalheartbeat' }, p('Digital Heartbeat')),
+      ]),
+    ]),
   ]),
 
   section({ id: 'mission', class: 'Mission' }, [
@@ -97,17 +113,20 @@ export const View = state => [
         p({ class: 'Huge' }, 'REPLAY'),
 
         div({ class: 'Spacer Left' }, [
-          p(
-            'Our obligation as artists, technologists, scientists and other creatives is displaying those visions and making the needs for change obvious and ubiquitous.',
-          ),
           p([
-            'By adding imaginariums to reality we are able to connect people all over the world,',
+            'Our obligation as artists, technologists, scientists and other creatives',
+            ' is to display those visions and make the need for change obvious and ubiquitous.',
+          ]),
+          p([
+            'By adding imaginariums to reality we are able to connect people,',
             ' and facilitate the sharing of artistic work on a virtual version of earth.',
           ]),
 
-          p(
-            'It allows the visitor to partake in exhibitions all over the earth, and soon maybe even on other planets, while the artists are not being limited by choice of venue, budget or other real world problems negatively interfering with the display of art',
-          ),
+          p([
+            'It allows the visitor to partake in exhibitions all over the earth, and soon maybe even on other planets,',
+            ' while the artists are not being limited by choice of venue.',
+            // ' budget or other real world problems negatively interfering with the display of art.',
+          ]),
         ]),
 
         div({ class: 'Big Narrow Right' }, 'This is our final chance to act.'),

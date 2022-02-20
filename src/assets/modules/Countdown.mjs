@@ -51,7 +51,7 @@ export const style = vars => ({
     borderRadius: '1em',
     textAlign: 'center',
     padding: '0.5em',
-    fontSize: '1.5em',
+    fontSize: '2em',
     display: 'inline-block',
   },
 
@@ -66,6 +66,10 @@ export const style = vars => ({
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
     fontSize: '1.3em',
+
+    '.Background': {
+      fontSize: '9vw',
+    },
 
     '.Placeholder': {
       top: '35%',
@@ -85,6 +89,16 @@ export const style = vars => ({
   },
   [`@media screen and (min-width: ${vars.widths.desktop})`]: {
     fontSize: '3em',
+
+    '.Background': {
+      fontSize: '1.3em',
+    },
+  },
+
+  [`@media screen and (min-width: ${vars.widths.agency})`]: {
+    '.Background': {
+      fontSize: '1.5em',
+    },
   },
 })
 

@@ -6,7 +6,7 @@ export const View = props => {
   return div({ class: 'Header' }, [
     div({ class: 'Container' }, [
       div({ class: 'Branding' }, [
-        img({ class: 'Logo', src: '/hero-logo.svg' }),
+        img({ class: 'Logo', src: '/hero-logo.svg', height: 80, width: 80 }),
 
         div({ class: 'Slogan' }, [p(b('hello world')), p('we are the SystemKollektiv')]),
       ]),

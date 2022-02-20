@@ -268,12 +268,21 @@ export default (v = {}) => {
     },
 
     '.Hero': {
-      '.HeroLogo': {
+      '.HeroLogo, .HeroCanvas': {
         maxWidth: '100%',
         width: '250px',
         height: 'auto',
         margin: '0 auto 1em',
         display: 'block',
+      },
+
+      '.AnimatedLogo': {
+        position: 'relative',
+      },
+
+      '.HeroCanvas': {
+        top: 0,
+        position: 'absolute',
       },
 
       h1: {
@@ -431,7 +440,7 @@ export default (v = {}) => {
       },
 
       '.Hero': {
-        '.HeroLogo': {
+        '.HeroLogo, .HeroCanvas': {
           float: 'left',
           margin: '0 2em 0 0',
           width: '30%',

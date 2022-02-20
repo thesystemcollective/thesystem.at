@@ -220,7 +220,7 @@ export default (v = {}) => {
 
     section: {
       clear: 'both',
-      margin: '2em 0',
+      padding: '2em 0',
 
       '.Container': {
         margin: '0 auto',
@@ -239,7 +239,6 @@ export default (v = {}) => {
       },
 
       '&.Mission': {
-        padding: 0,
 
         '.GameOver': {
           background: `linear-gradient(180deg, ${v.background.dark} 0%, ${v.gameoverColor} 99%, #7e909e 100%)`,
@@ -280,9 +279,13 @@ export default (v = {}) => {
         position: 'relative',
       },
 
-      '.HeroCanvas': {
-        top: 0,
+      '.HeroLogo': {
         position: 'absolute',
+        left: '100vw',
+        width: '400px',
+        height: 'auto',
+        maxWidth: 'inherit',
+        maxHeight: 'inherit',
       },
 
       h1: {

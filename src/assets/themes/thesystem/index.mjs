@@ -280,12 +280,13 @@ export default (v = {}) => {
       },
 
       '.HeroLogo': {
-        position: 'absolute',
-        left: '100vw',
-        width: '400px',
         height: 'auto',
-        maxWidth: 'inherit',
+        left: 'auto',
         maxHeight: 'inherit',
+        maxWidth: 'inherit',
+        position: 'absolute',
+        right: '100vw',
+        width: '400px',
       },
 
       h1: {

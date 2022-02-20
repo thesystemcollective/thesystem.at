@@ -2,9 +2,9 @@ export const View = state => [
   Section({ class: 'Hero' }, [
     img({ class: 'HeroLogo', src: '/hero-logo.svg', height: 400, width: 400 }),
 
-    div({ class: 'HeroBranding' }, [
-      h1('SystemKollektiv'),
+    h1([span('System'), span('Kollektiv')]),
 
+    div({ class: 'HeroBranding' }, [
       p({ class: 'Branding Big' }, [
         'Our mission is to create, procure, research, distribute,',
         ' and preserve digitized art in the Artificial Museum.',
@@ -25,7 +25,7 @@ export const View = state => [
       height: 800,
       width: 600,
     }),
-      figcaption([
+      figcaption({ class: 'Right' }, [
         p('Winston Hacking:'),
         Link({ to: 'https://artificialmuseum.com/toronto/#z=16&lat=43.67059&lng=-79.43862&s=list&d=ecstaticcling&p=ecstaticcling' }, p('Ecstatic Cling'))
       ]),
@@ -131,14 +131,14 @@ export const View = state => [
 
         div({ class: 'Big Narrow Right' }, 'This is our final chance to act.'),
 
-        div({ class: 'MoonBase' }, [
+        div({ class: 'MoonBase' }, div({ class: 'MoonContainer' }, [
           Picture({ class: 'Moon', name: 'moon', extension: 'jpg', width: 1024, height: 1024 }),
 
           Countdown({ until: 'March 04, 2022 00:00:00', title: 'To the moon!' }, [
             h2('Countdown done!'),
             p('Show start game button here...'),
           ]),
-        ]),
+        ])),
       ]),
     ),
   ]),

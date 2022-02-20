@@ -11,7 +11,8 @@ export const View = props => {
         div({ class: 'Slogan' }, [p(b('hello world')), p('we are the SystemKollektiv')]),
       ]),
 
-      div({ class: 'Hamburger', onclick: actions.header?.toggle }, '[ ]'),
+      div({ class: 'Hamburger', onclick: actions.header?.toggle }, img({ src: '/hamburger.svg', height: 40, width: 40 })),
+
       menu && Menu({ class: props.menuVisible ? 'visible' : 'no', url, hash, menu }),
     ]),
   ])
@@ -37,7 +38,7 @@ export const style = vars => ({
   '.Container': {
     maxWidth: '1300px',
     margin: '0 auto',
-    padding: '0 5vw 0 0',
+    padding: '0 2vw 0 0',
   },
 
   '.Branding': {
@@ -47,6 +48,8 @@ export const style = vars => ({
   '.Hamburger': {
     float: 'right',
     cursor: 'pointer',
+    height: '2em',
+    width: '2em',
   },
 
   '.Logo': {
@@ -80,19 +83,24 @@ export const style = vars => ({
   },
 
   [`@media screen and (min-width: ${vars.widths.tablet})`]: {
+    // '.Container': {
+    //   margin: '0 5vw 0 0',
+    // },
+
     '.Hamburger': {
       display: 'none',
     },
+
     '.Menu': {
+      float: 'right',
+
       '&.no': {
         display: 'inherit',
       },
     },
+
     '.Branding': {
       float: 'left',
-    },
-    '.Menu': {
-      float: 'right',
     },
   },
 

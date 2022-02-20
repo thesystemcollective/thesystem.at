@@ -5,8 +5,7 @@ export const View = () =>
     text: 'Visit the Artificial Museum',
   })
 
-export const style = vars =>
-  console.log({ vars }) || {
+export const style = vars => ({
     backgroundColor: vars.background.light,
     color: vars.text.light,
     display: 'inline-block',
@@ -34,4 +33,4 @@ export const style = vars =>
     [`@media screen and (min-width: ${vars.widths.tablet})`]: {
       fontSize: '25px',
     },
-  }
+})

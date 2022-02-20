@@ -260,13 +260,14 @@ export default (v = {}) => {
 
     figcaption: {
       fontSize: '0.5em',
+      padding: '0 0.5em',
+
+      '&.Right': {
+        textAlign: 'right',
+      }
     },
 
     '.Hero': {
-      '.Container': {
-        display: 'inline-block',
-      },
-
       '.HeroLogo': {
         maxWidth: '100%',
         width: '250px',
@@ -280,12 +281,22 @@ export default (v = {}) => {
         lineHeight: 1,
         fontSize: '11.5vw',
       },
+
+      'a.Button': {
+        clear: 'both',
+      },
     },
 
     '.MoonBase': {
-      display: 'inline-block',
       position: 'relative',
       zIndex: 2,
+      width: '100%',
+      clear: 'both',
+
+      '.MoonContainer': {
+        display: 'block',
+        margin: '0 auto',
+      },
     },
 
     '.Picture.Moon': {
@@ -366,6 +377,8 @@ export default (v = {}) => {
     '.MapArea': {
       display: 'inline-block',
       width: '100%',
+      margin: '3em 0 0',
+      clear: 'both',
     },
 
     '.MapImage': {
@@ -421,7 +434,7 @@ export default (v = {}) => {
         '.HeroLogo': {
           float: 'left',
           margin: '0 2em 0 0',
-          width: '200px',
+          width: '30%',
         },
 
         '.HeroBranding': {
@@ -429,7 +442,13 @@ export default (v = {}) => {
         },
 
         h1: {
+          float: 'left',
           fontSize: '50px',
+          margin: '-8px 0 0',
+
+          span: {
+            display: 'block',
+          },
         },
       },
 
@@ -500,6 +519,19 @@ export default (v = {}) => {
       '.content': {
         width: '70vw',
         margin: '0 auto 6em',
+      },
+
+      '.Hero': {
+        '.HeroBranding': {
+          float: 'left',
+          width: '40%',
+        },
+
+        h1: {
+          span: {
+            display: 'inline',
+          },
+        },
       },
 
       '.Mission': {

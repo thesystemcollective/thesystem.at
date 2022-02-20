@@ -220,7 +220,7 @@ export default (v = {}) => {
 
     section: {
       clear: 'both',
-      padding: '2em 0',
+      padding: '4em 0 0',
 
       '.Container': {
         margin: '0 auto',

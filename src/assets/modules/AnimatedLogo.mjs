@@ -1,7 +1,7 @@
 export const View = (state) => {
   return div({ class: 'AnimatedLogo' }, [
     img({ class: 'HeroLogo', onload: actions.animateLogo, src: '/hero-logo.svg', height: 400, width: 400 }),
-    canvas({ class: 'HeroCanvas' }),
+    canvas({ class: 'HeroCanvas', height: 400, width: 400 }),
   ])
 }
 
@@ -16,11 +16,5 @@ export const actions = {
 export const global = {
   actions: {
     animateLogo: true,
-  },
-}
-
-export const style = {
-  canvas: {
-    position: 'absolute',
   },
 }

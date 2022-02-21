@@ -48,6 +48,19 @@ export const style = vars => ({
     color: vars.text.light,
   },
 
+  a: {
+    display: 'inline-block',
+
+    img: {
+      color: vars.text.light,
+
+      ':hover': {
+        color: vars.text.light,
+        // textDecoration: 'underline',
+      },
+    },
+  },
+
   background: `
       linear-gradient(0deg,
         ${vars.background.dark} 0%,
@@ -64,10 +77,6 @@ export const style = vars => ({
         ${vars.replayColor} 60%,
         ${vars.background.light} 100%
       )`,
-  },
-
-  a: {
-    display: 'inline-block',
   },
 
   img: {

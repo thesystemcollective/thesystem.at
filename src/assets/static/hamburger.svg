@@ -1,3 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
-  <path d="M400 279h-64v57H64v-57H0v121h400zM0 121h64V64h273v57h63V0H0ZM63 169h273v-21H64ZM63 209h273v-20H63ZM63 249h273v-20H64Z" fill="#f0f0f0" style="stroke-width:5"/>
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#fafafa">
+    <path d="M0 9.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0ZM7.5 9.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0ZM15 9.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Z"/>
+  </g>
 </svg>

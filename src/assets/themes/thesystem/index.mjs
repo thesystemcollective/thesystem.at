@@ -357,6 +357,10 @@ export default (v = {}) => {
       margin: '2em 0',
       padding: '5em 0',
 
+      ul: {
+        margin: '0 0 1em',
+      },
+
       li: {
         color: v.replayColor,
         fontSize: '1.2em',

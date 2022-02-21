@@ -267,7 +267,7 @@ export default (v = {}) => {
     },
 
     '.Hero': {
-      '.HeroLogo, .HeroCanvas': {
+      '.HeroCanvas': {
         maxWidth: '100%',
         width: '250px',
         height: 'auto',
@@ -286,7 +286,7 @@ export default (v = {}) => {
         maxWidth: 'inherit',
         position: 'absolute',
         right: '100vw',
-        width: '400px',
+        width: '300px',
       },
 
       h1: {
@@ -448,7 +448,7 @@ export default (v = {}) => {
       },
 
       '.Hero': {
-        '.HeroLogo, .HeroCanvas': {
+        '.HeroCanvas': {
           float: 'left',
           margin: '0 2em 0 0',
           width: '30%',

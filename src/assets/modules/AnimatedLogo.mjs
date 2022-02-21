@@ -1,11 +1,14 @@
 export const View = (state) => {
-  let cl = 'HeroLogo'
-  if (lib.isIos()) {
-    cl += ' ios'
+  const props = {
+    class: 'AnimatedLogo',
   }
 
-  return div({ class: 'AnimatedLogo' }, [
-    img({ class: cl, onload: actions.animateLogo, src: '/hero-logo.svg', height: 400, width: 400 }),
+  if (lib.isIos()) {
+    props.class += ' ios'
+  }
+
+  return div(props, [
+    img({ class: 'HeroLogo', onload: actions.animateLogo, src: '/hero-logo.svg', height: 400, width: 400 }),
     canvas({ class: 'HeroCanvas', height: 400, width: 400 }),
   ])
 }
@@ -41,8 +44,12 @@ export const style = v => ({
     width: '300px',
   },
 
-  'body &&': {
-    '.HeroLogo.ios': {
+  '&.ios': {
+    '.HeroCanvas': {
+      display: 'none',
+    },
+
+    '.HeroLogo': {
       maxWidth: '100%',
       width: '250px',
       height: 'auto',
@@ -59,8 +66,8 @@ export const style = v => ({
       margin: '0 2em 0 0',
       width: '30%',
     },
-    'body &&': {
-      '.HeroLogo.ios': {
+    '&.ios': {
+      '.HeroLogo': {
         float: 'left',
         margin: '0 2em 0 0',
         width: '30%',

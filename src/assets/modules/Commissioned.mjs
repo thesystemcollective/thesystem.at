@@ -3,14 +3,16 @@ export const View = () =>
     h2('Commissioned by:'),
 
     div([
-      Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
+      Link({ to: 'https://wirtschaftsagentur.at', title: 'Wirtschaftsagentur Wien' }, [
         Img({
-          class: 'koer',
-          alt: 'KÖR Wien',
-          src: 'https://static.artificialmuseum.com/support/koer.svg',
-          width: 255,
+          alt: 'Wirtschaftsagentur Wien',
+          src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png',
           height: 100,
+          width: 100,
         }),
+      ]),
+
+      Link({ title: 'commissioned by kör', to: 'https://www.koer.or.at/' }, [
         Img({
           class: 'koer',
           alt: 'Wien Kultur',
@@ -18,14 +20,12 @@ export const View = () =>
           width: 242,
           height: 100,
         }),
-      ]),
-
-      Link({ to: 'https://wirtschaftsagentur.at', title: 'Wirtschaftsagentur Wien' }, [
         Img({
-          alt: 'Wirtschaftsagentur Wien',
-          src: 'https://static.artificialmuseum.com/support/wirtschaftsagenturwien.png',
+          class: 'koer',
+          alt: 'KÖR Wien',
+          src: 'https://static.artificialmuseum.com/support/koer.svg',
+          width: 255,
           height: 100,
-          width: 100,
         }),
       ]),
 
@@ -43,6 +43,10 @@ export const style = vars => ({
   position: 'relative',
   margin: '4em 0 0',
   width: 'auto',
+
+  h2: {
+    color: vars.text.light,
+  },
 
   background: `
       linear-gradient(0deg,

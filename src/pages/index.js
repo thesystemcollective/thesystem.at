@@ -88,8 +88,9 @@ export const View = state => [
           //   ' by representing ideas and critiques and taking a stance on them.',
           // ]),
 
+          p({ class: 'Medium' }, 'There is not much time left until the beginning of 2030.'),
+
           p([
-            'There is not much time left until the beginning of 2030.',
             ' Creative eyes can already catch a glimpse of the needed changes,',
             ' a vision for humanity’s future that is reachable, sustainable and,',
             ' frankly, better than what we have now.',
@@ -123,7 +124,7 @@ export const View = state => [
           ]),
 
           p([
-            'It allows the visitor to partake in exhibitions all over the earth, and soon maybe even on other planets,',
+            'It allows the visitor to partake in exhibitions all over the world, and soon maybe even on other planets,',
             ' while the artists are not being limited by choice of venue.',
             // ' budget or other real world problems negatively interfering with the display of art.',
           ]),
@@ -134,7 +135,7 @@ export const View = state => [
         div({ class: 'MoonBase' }, div({ class: 'MoonContainer' }, [
           Picture({ class: 'Moon', name: 'moon', extension: 'jpg', width: 1024, height: 1024 }),
 
-          Countdown({ until: 'March 04, 2022 00:00:00', title: 'To the moon!' }, [
+          Countdown({ until: 'March 10, 2022 18:00:00', title: 'To the moon' }, [
             h2('Countdown done!'),
             p('Show start game button here...'),
           ]),

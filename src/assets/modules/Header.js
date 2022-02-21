@@ -88,6 +88,10 @@ export const style = vars => ({
     //   margin: '0 5vw 0 0',
     // },
 
+    '.Logo': {
+      margin: '0 1.25vw',
+    },
+
     '.Hamburger': {
       display: 'none',
     },

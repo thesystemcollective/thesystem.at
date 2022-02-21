@@ -1,7 +1,5 @@
 export const View = (state) => {
   let cl = 'HeroLogo'
-  console.log({ lib })
-
   if (typeof navigator !== 'undefined' && lib.isIos()) {
     cl += ' ios'
   }

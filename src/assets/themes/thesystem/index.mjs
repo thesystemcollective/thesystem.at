@@ -59,6 +59,7 @@ export default (v = {}) => {
       overflowX: 'initial',
       lineHeight: 1.4,
       backgroundColor: v.background.dark,
+      width: '100%',
     },
 
     a: {
@@ -268,28 +269,6 @@ export default (v = {}) => {
     },
 
     '.Hero': {
-      '.HeroCanvas': {
-        maxWidth: '100%',
-        width: '250px',
-        height: 'auto',
-        margin: '0 auto 1em',
-        display: 'block',
-      },
-
-      '.AnimatedLogo': {
-        position: 'relative',
-      },
-
-      '.HeroLogo': {
-        height: 'auto',
-        left: 'auto',
-        maxHeight: 'inherit',
-        maxWidth: 'inherit',
-        position: 'absolute',
-        right: '100vw',
-        width: '300px',
-      },
-
       h1: {
         padding: 0,
         lineHeight: 1,
@@ -449,12 +428,6 @@ export default (v = {}) => {
       },
 
       '.Hero': {
-        '.HeroCanvas': {
-          float: 'left',
-          margin: '0 2em 0 0',
-          width: '30%',
-        },
-
         '.HeroBranding': {
           float: 'left',
         },

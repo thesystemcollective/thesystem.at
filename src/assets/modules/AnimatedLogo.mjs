@@ -1,6 +1,6 @@
 export const View = (state) => {
   let cl = 'HeroLogo'
-  if (typeof navigator !== 'undefined' && lib.isIos()) {
+  if (lib.isIos()) {
     cl += ' ios'
   }
 
@@ -13,7 +13,6 @@ export const View = (state) => {
 export const actions = {
   animateLogo: state => {
     if (!lib.isIos()) {
-      console.log('animate')
       lib.animatedLogo()
     }
 
@@ -24,7 +23,7 @@ export const actions = {
 export const style = v => ({
   position: 'relative',
 
-  '.HeroCanvas, .HeroLogo.ios': {
+  '.HeroCanvas': {
     maxWidth: '100%',
     width: '250px',
     height: 'auto',
@@ -42,11 +41,30 @@ export const style = v => ({
     width: '300px',
   },
 
+  'body &&': {
+    '.HeroLogo.ios': {
+      maxWidth: '100%',
+      width: '250px',
+      height: 'auto',
+      margin: '0 auto 1em',
+      display: 'block',
+      position: 'relative',
+      right: 'auto',
+    },
+  },
+
   [`@media screen and (min-width: ${v.widths.tablet})`]: {
-    '.HeroCanvas, .HeroLogo.ios': {
+    '.HeroCanvas': {
       float: 'left',
       margin: '0 2em 0 0',
       width: '30%',
+    },
+    'body &&': {
+      '.HeroLogo.ios': {
+        float: 'left',
+        margin: '0 2em 0 0',
+        width: '30%',
+      },
     },
   }
 })

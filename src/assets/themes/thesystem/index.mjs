@@ -58,6 +58,7 @@ export default (v = {}) => {
       fontFamily: 'notosans, sans-serif',
       overflowX: 'initial',
       lineHeight: 1.4,
+      backgroundColor: v.background.dark,
     },
 
     a: {

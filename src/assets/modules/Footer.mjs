@@ -20,7 +20,7 @@ export const View = state =>
 
       h3('Represented by:'),
       p(Link({ to: 'https://litto.work', text: 'Litto / Daniela Weiss' })),
-      p(Link({ to: 'http://klauskrobath.com', text: 'Klaus Krobath' })),
+      p(Link({ to: 'http://www.klauskrobath.com', text: 'Klaus Krobath' })),
       p(Link({ to: 'https://jaeh.at', text: 'Jascha Ehrenreich' })),
 
       h3('Email:'),

@@ -63,7 +63,7 @@ export const style = v => ({
   [`@media screen and (min-width: ${v.widths.tablet})`]: {
     '.HeroCanvas': {
       float: 'left',
-      margin: '0 2em 0 0',
+      margin: '-4vw 2em 0 -3vw',
       width: '30%',
     },
     '&.ios': {
@@ -73,7 +73,12 @@ export const style = v => ({
         width: '30%',
       },
     },
-  }
+  },
+  [`@media screen and (min-width: ${v.widths.laptop})`]: {
+    '.HeroCanvas': {
+      margin: '-4vw 2em 0 -40px',
+    },
+  },
 })
 
 export const global = {

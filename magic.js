@@ -1,6 +1,6 @@
 export default {
   ROOT: 'src',
-  WEB_ROOT: '/thesystem-rework/',
+  WEB_ROOT: '/',
   URL: 'thesystem.at',
   PUBLIC: 'docs',
   THEME: 'thesystem',

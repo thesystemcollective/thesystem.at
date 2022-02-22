@@ -6,7 +6,17 @@ export const View = props => {
   return div({ class: 'Header' }, [
     div({ class: 'Container' }, [
       div({ class: 'Branding' }, [
-        img({ class: 'Logo', src: '/hero-logo.svg', height: 400, width: 400 }),
+        svg({
+          class: 'Logo',
+          width: 20,
+          height: 20,
+          viewBox: '0 0 400 400',
+        }, [
+          path({ d: "M279 0v64h57v273h-57v63h121V0ZM121 400v-64H64V64h57V0H0v400z", fill: "#f0f0f0" }),
+          path({ d: "M135 231v-9a51 51 0 0 1 4-21 59 59 0 0 1 14-18 77 77 0 0 0 12-15 30 30 0 0 0 4-15 17 17 0 0 0-5-12 17 17 0 0 0-12-5 44 44 0 0 0-16 3 103 104 0 0 0-16 9l-12-27a105 106 0 0 1 23-11 73 73 0 0 1 24-4 49 50 0 0 1 36 12 43 43 0 0 1 12 32 52 52 0 0 1-6 27 101 101 0 0 1-18 22 99 99 0 0 0-9 10 25 25 0 0 0-4 7 35 35 0 0 0-1 9v6zm-6 42a21 21 0 0 1 6-16 22 22 0 0 1 15-5 21 21 0 0 1 15 5 21 21 0 0 1 6 16 21 21 0 0 1-6 16 20 20 0 0 1-15 5 22 22 0 0 1-14-5 20 20 0 0 1-7-16zm128-42h-30l-5-123h41zm-35 42a21 21 0 0 1 6-16 21 21 0 0 1 15-5 19 19 0 0 1 20 21 21 21 0 0 1-6 16 21 21 0 0 1-15 5 19 19 0 0 1-20-21z", fill: "#f0f0f0" }),
+        ]),
+
+        // img({ class: 'Logo', src: '/hero-logo.svg', height: 400, width: 400 }),
 
         div({ class: 'Slogan' }, [p(b('hello world')), p('we are the SystemKollektiv')]),
       ]),
